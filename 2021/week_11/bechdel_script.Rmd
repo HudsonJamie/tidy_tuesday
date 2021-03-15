@@ -1,0 +1,98 @@
+---
+title: "TT_2021_week_11"
+author: "Jamie Hudson"
+date: "15/03/2021"
+output: html_document
+---
+
+# Bechdel Test
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load_packages}
+
+library(tidyverse)
+```
+
+
+```{r load_data}
+
+tuesdata <- tidytuesdayR::tt_load(2021, week = 11)
+```
+
+```{r data_prep}
+
+raw_bechdel <- tuesdata$raw_bechdel
+raw_movies <- tuesdata$movies
+
+fantasy_movies <- raw_movies %>%
+  filter(str_detect(genre, "Sci-Fi")) %>%
+  mutate(
+    clean_test = case_when(
+      clean_test == "ok" ~ "Pass Bechdel",
+      clean_test == "dubious" ~ "Dubious",
+      clean_test == "men" ~ "About men",
+      clean_test == "notalk" ~ "No talk",
+      clean_test == "nowomen" ~ "No women"
+    )
+  ) %>%
+  mutate(clean_test = as.factor(clean_test),
+         clean_test = fct_relevel(
+           clean_test,
+           c("Pass Bechdel", "Dubious", "About men", "No talk", "No women")
+         )) %>%
+  select(year, title, clean_test, binary, genre) %>%
+  group_by(year, clean_test) %>%
+  summarise(n_movies_yr = n()) %>%
+  mutate(
+    n_movies_prop = n_movies_yr / sum(n_movies_yr),
+    ymax = cumsum(n_movies_prop),
+    ymin = c(0, head(ymax, n = -1))
+  )
+
+```
+
+```{r ggplot}
+
+p.subtitle <- "How do fantasy films from 1970 - 2013 fare against the Bechdel Test? 
+\nThe Bechdel Test measures the representation of women in film. 
+\nTo \"pass\" the test, a movie must satisfy three criteria: 
+\n1) Have at least two named women in the movie; 
+\n2) They must have a conversation with each other; 
+\n3) The conversation must not be about a male character"
+
+ggplot(fantasy_movies,
+       aes(
+         ymax = ymax,
+         ymin = ymin,
+         xmax = 4,
+         xmin = 3,
+         fill = clean_test
+       )) +
+  geom_rect() +
+  facet_wrap(~ year) +
+  xlim(c(1, 4)) +
+  coord_polar(theta = "y") +
+  labs(title = "You shall not pass!... the Bechdel Test",
+       subtitle = p.subtitle,
+       caption = "@jamie_bio | source: FiveThirtyEight\n") +
+  theme_void() +
+  theme(
+    text = element_text(family = "Aniron",
+                        colour = "#2d1a0d"),
+    plot.background = element_rect(fill = "#F8F2E4"),
+    plot.margin = margin(5, 200, 10, 50),
+    legend.position = c(1.2, 0.6),
+    legend.title = element_blank(),
+    plot.title = element_text(size = 20),
+    plot.caption = element_text(family = "sans"),
+    plot.caption.position = "panel",
+    legend.text = element_text(size = 8),
+    legend.key.size = unit(1.5, "cm")
+  ) +
+  scale_fill_manual(values = c("goldenrod3", "#e7d9bd", "#b79c71", "#72593d", "#402f21"))
+
+ggsave(paste0("bechdel_test_", format(Sys.time(), "%d%m%Y"), ".png"),
+       width = 9.9, height = 9.55, bg = "transparent")
+```
