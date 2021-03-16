@@ -92,7 +92,7 @@ ggplot() +
         text = element_text(family = "Barcade Brawl",
                             colour = "white"))
 
-ggsave("steam_plot.png",
+ggsave(paste0("steam_plot", format(Sys.time(), "%d%m%Y"), ".png"),
        width = 31,
        height = 20,
        unit = "cm",
