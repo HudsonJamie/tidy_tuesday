@@ -196,8 +196,9 @@ ratio_plots$patches$layout$heights <- 1
     colour = "#800020",
     family = "sans"))))
 
+pdf.options(useDingbats=FALSE)
 ggsave(
-  paste0("deforestation_1_", format(Sys.time(), "%d%m%Y"), ".pdf"),
+  paste0("deforestation_", format(Sys.time(), "%d%m%Y"), ".png"),
   width = 25,
   height = 20,
   unit = "cm",
