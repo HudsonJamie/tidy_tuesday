@@ -4,7 +4,21 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
-## 2021 week 12 - Video Games 👾
+## [2021 week 15](/2021/week_15/) - Deforestation 🌳🪵
+
+Deforestation data from Our World in Data
+![deforestation vote](/2021/week_15/deforestation_06042021.png)
+
+----
+
+## [2021 week 13](/2021/week_13/) - UN votes 🌐🌍
+
+UN voting data from Harvard Dataverse
+![UN vote](/2021/week_13/un_votes25032021.png)
+
+----
+
+## [2021 week 12](/2021/week_12/) - Video Games 👾
 
 Video game data from the video game distribution service Steam
 
@@ -13,7 +27,7 @@ Video game data from the video game distribution service Steam
 ----
 
 
-## 2021 week 11 - Bechdel Test 🎥🙋‍♀️
+## [2021 week 11](/2021/week_11/) - Bechdel Test 🎥🙋‍♀️
 
 The Bechdel test is a measure of the representation of women in fiction
 
