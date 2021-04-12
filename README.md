@@ -13,7 +13,7 @@ Deforestation data from Our World in Data
 
 ## [2021 week 14](/2021/week_14/) - Make up shades 💄
 
-Makeup shades data from The Pudding | See original aritcle [here](https://pudding.cool/2021/03/foundation-names/)
+Makeup shades data from The Pudding | See original article [here](https://pudding.cool/2021/03/foundation-names/)
 ![makeup_shades](/2021/week_14/makeup_shades_12042021.png)
 
 ----
