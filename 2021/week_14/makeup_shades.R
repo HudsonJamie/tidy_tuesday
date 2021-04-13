@@ -170,8 +170,6 @@ set.seed(2021)
 )
 
 ggsave(
-  "makeup_shades.png",
-  height = 8.36,
-  width = 12,
+  paste0("makeup_shades_", format(Sys.time(), "%d%m%Y"), ".png"),
   dpi = 320
 )
