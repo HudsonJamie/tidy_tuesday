@@ -145,6 +145,13 @@ kernel_plots$patches$layout$heights <- 1
 
 # ratio plot --------------------------------------------------------------
 
+palm_indo_malay <- palm %>% 
+  filter(entity %in% c("Indonesia", "Malaysia"))
+
+ratio <- palm_indo_malay %>% 
+  group_by(year, entity) %>% 
+  summarise(ratio = production[crop_oil == "Palm"]/production[crop_oil == "Palm kernel"])
+
 (ratio_line <- ratio %>% 
    ggplot(aes(x = year, y = ratio, colour = entity)) +
    geom_line(size = 1) +
