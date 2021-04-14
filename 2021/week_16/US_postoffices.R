@@ -29,7 +29,7 @@ state_size <- state_size %>%
   arrange(state)
 
 # Download the Hexagones boundaries at geojson format here: https://team.carto.com/u/andrew/tables/andrew.us_states_hexgrid/public/map.
-spdf <- geojson_read("../data/us_states_hexgrid.geojson",  what = "sp")
+spdf <- geojson_read("data/us_states_hexgrid.geojson",  what = "sp")
 
 spdf@data = spdf@data %>% 
   mutate(state = gsub(" \\(United States\\)", "", google_name)) 
@@ -118,8 +118,9 @@ spdf_fortified_size_post$bin_den <- cut( spdf_fortified_size_post$density*1000 ,
   labs(fill = "Density of Post Offices  \n(# per 1000 sq. mi.)") +
   annotate(
     "richtext", x = -70, y = 30, family = "Source Sans Pro", size = 3.5, color = "black", lineheight = .9,
-    label = glue::glue("New Jersey had on average  \n**<span style='color:#CBBA69FF'>{round(NJ_density$density, 4)*1000}</span>** Post Offices per 100 square miles"),
-    label.colour = NA
+    label = glue::glue("New Jersey had on average  \n**<span style='color:#CBBA69FF'>{round(NJ_density$density, 4)*1000}</span>** Post Offices per 1000 sq. mi."),
+    label.colour = NA,
+    fill = NA
   ) +
   geom_segment(
     data = NJ_arrow, aes(x = x1, y = y1, xend = x2, yend = y2),
@@ -147,7 +148,8 @@ spdf_fortified_size_post$bin_rev <- cut( spdf_fortified_size_post$rev_density , 
   annotate(
     "richtext", x = -108, y = 52, family = "Source Sans Pro", size = 3.5, color = "black", lineheight = .9,
     label = glue::glue("Alaska only had on average  \none Post Office every **<span style='color:#CBBA69FF'>{round(AK_density$rev_density, 0)} miles</span>**"),
-    label.colour = NA
+    label.colour = NA,
+    fill = NA
   ) +
   geom_segment(
     data = AK_arrow, aes(x = x1, y = y1, xend = x2, yend = y2),
