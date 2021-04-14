@@ -4,10 +4,17 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2021 week 16](/2021/week_16/) - US Post Offices ✉️📪
+
+US Post Office data from Blevins & Helbock, 2021, "US Post Offices", Harvard Dataverse
+![us_post_offices](/2021/week_16/us_post14042021.png)
+
+----
+
 ## [2021 week 15](/2021/week_15/) - Deforestation 🌳🪵
 
 Deforestation data from Our World in Data
-![deforestation vote](/2021/week_15/deforestation_06042021.png)
+![deforestation](/2021/week_15/deforestation_06042021.png)
 
 ----
 
