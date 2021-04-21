@@ -198,8 +198,8 @@ top_genres_RT$listed_in_f <- factor(top_genres_RT$listed_in, levels=top_genres_R
   ggplot(aes(x = date_added, y = rotten_tomatoes)) +
   geom_point(colour="#E30914", size = 0.5) +
     scale_y_continuous(limits = c(0,110), breaks = c(0,50,100)) +
-  labs(title = "Recently Watched <span style='font-size:12pt'>(Genres with highest average Rotten Tomato rating)</span>",
-       y = "Rotten Tomato \nrating (%)") +
+  labs(title = "Recently Watched <span style='font-size:12pt'>(Genres with highest average Rotten Tomatoes rating)</span>",
+       y = "Rotten Tomatoes \nrating (%)") +
   facet_wrap(.~listed_in_f, nrow = 1) +
   scale_x_date(breaks = as.Date(c("2015-01-01", "2020-01-01")),
                labels = c("2015","2020")) +
@@ -228,8 +228,8 @@ top_genres_RT$listed_in_f <- factor(top_genres_RT$listed_in, levels=top_genres_R
               "@jamie_bio",
               "| source: Shivam Bansal - Kaggle",
               "Week 17, 2021 Coming Tuesday",
-              "Here I combined Netflix show data <br>
-              with IMDB and Rotten Tomato ratings <br>to
+              "Here I combined Netflix TV show data <br>
+              with IMDB and Rotten Tomatoes ratings <br>to
               create a ggplot which mimics <br>the Netflix homepage"
   )) %>% 
   ggplot(aes(x, y, label = label)) +
