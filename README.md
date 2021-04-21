@@ -7,7 +7,7 @@ Please send me any hints or tips you may have on [Twitter](https://twitter.com/J
 ## [2021 week 17](/2021/week_17/) - Netflix Titles 📺
 
 Netflix show data from Shivam Bansal (Kaggle)
-![netflix_shows](/2021/week_16/netflix21042021.png)
+![netflix_shows](/2021/week_17/netflix21042021.png)
 
 ----
 
