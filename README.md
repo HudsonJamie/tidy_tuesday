@@ -1,6 +1,6 @@
 # Tidy Tuesday fun
 
-This repository contains my visualistaions and accompanying scripts for [#TidyTuesday](https://github.com/rfordatascience/tidytuesday) contributions.
+This repository contains my visualistaions and accompanying scripts for [#TidyTuesday](https://github.com/rfordatascience/tidytuesday) contributions. All of these contributions use only R packages (mainly those from the `tidyverse` such as `dplyr` and `ggplot2`). 
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
