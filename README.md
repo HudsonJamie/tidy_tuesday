@@ -4,6 +4,13 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2021 week 18](/2021/week_18/) - CEO departures 📊
+
+CEP departure data from Gentry et al. 2021 & DataIsPlural
+![CEO](/2021/week_18/CEO_27042021.png)
+
+----
+
 ## [2021 week 17](/2021/week_17/) - Netflix Titles 📺
 
 Netflix show data from Shivam Bansal (Kaggle)
