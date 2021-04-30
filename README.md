@@ -6,7 +6,7 @@ Please send me any hints or tips you may have on [Twitter](https://twitter.com/J
 
 ## [2021 week 18](/2021/week_18/) - CEO departures 📊
 
-CEP departure data from Gentry et al. 2021 & DataIsPlural
+CEO departure data from Gentry et al. 2021 & DataIsPlural
 ![CEO](/2021/week_18/CEO_27042021.png)
 
 ----
