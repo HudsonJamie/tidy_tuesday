@@ -4,8 +4,6 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
-----
-
 ## [2021 week 19](/2021/week_19/) - Water sources 💦
 
 Water point data from Water Point Data Exchange
