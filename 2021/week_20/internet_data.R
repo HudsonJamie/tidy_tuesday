@@ -67,7 +67,7 @@ legend <- ggplot() +
   lims(x = c(-4.7, 9)) +
   theme(plot.title = element_text(colour = "white"),
         plot.background = element_blank(),
-        panel.background = element_rect(fill = "grey5"),
+        panel.background = element_rect(fill = "grey15"),
         panel.grid.major = element_blank(), 
         panel.grid.minor = element_blank(),
         axis.title = element_blank(),
@@ -95,8 +95,8 @@ map <- ggplot(broadbands) +
                                   family = "Roboto Mono"),
         plot.subtitle = element_text(colour = "white", size = 20,
                                      family = "Roboto Mono"),
-        plot.background = element_rect(fill = "grey5"),
-        panel.background = element_rect(fill = "grey5"),
+        plot.background = element_rect(fill = "grey15"),
+        panel.background = element_rect(fill = "grey15"),
         axis.title = element_blank(),
         panel.grid.major = element_blank(), 
         panel.grid.minor = element_blank(),
@@ -105,17 +105,14 @@ map <- ggplot(broadbands) +
         strip.background = element_blank(),
         axis.text = element_blank(),
         axis.ticks = element_blank(),
-        plot.margin = margin(20,50,20,50)) +
+        plot.margin = margin(20,55,20,55)) +
   facet_geo(~ state, grid = "us_state_grid2", label = "code")
 
 ggdraw(map) +
-  draw_plot(legend, x = 0.40, y = 0.80, 0.65, 0.17)
-
-ggdraw(map) +
-  draw_plot(legend, x = 0.55, y = 0.8, 0.65, 0.17)
+  draw_plot(legend, x = 0.54, y = 0.8, 0.65, 0.17)
 
 ggsave(paste0("internet_data", format(Sys.time(), "%d%m%Y"), ".png"),
        dpi = 320,
-       width = 12.5,
-       height = 11.2,
+       width = 12.2,
+       height = 11.15,
        type = "cairo-png")
