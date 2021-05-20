@@ -1,8 +1,8 @@
-# internet_Data.R
+# annual_salary.R
 # Jamie Hudson
-# Created: 14 May 2021
-# Edited: 14 May 2021
-# Data: Microsoft (https://github.com/microsoft/USBroadbandUsagePercentages)
+# Created: 20 May 2021
+# Edited: 20 May 2021
+# Data: Ask a Manager (https://docs.google.com/spreadsheets/d/1IPS5dBSGtwYVbjsfbaMCYIWnOuRmJcbequohNxCyGVw/edit?resourcekey#gid=1625408792)
 
 # load libraries ----------------------------------------------------------
 library(tidytuesdayR)
