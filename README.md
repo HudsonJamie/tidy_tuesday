@@ -4,7 +4,7 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
-## [2021 week 21](/2021/week_21/) - Salary survey 💻
+## [2021 week 21](/2021/week_21/) - Salary survey 💰
 
 Salary survey from Ask a Manager
 ![water_source](/2021/week_21/salary_data20052021.png)
