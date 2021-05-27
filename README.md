@@ -4,6 +4,13 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2021 week 22](/2021/week_22/) - Mario Kart 64 🏎🏁
+
+Mario Kart 64 World Records from Benedikt Claus & MKWR
+![mario_kart](/2021/week_22/mario_kart_64_27052021.png)
+
+----
+
 ## [2021 week 21](/2021/week_21/) - Salary survey 💰
 
 Salary survey from Ask a Manager
