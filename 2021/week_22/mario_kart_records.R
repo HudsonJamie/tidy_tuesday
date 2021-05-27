@@ -407,12 +407,12 @@ n64_plot <- function(data) {
   geom_rect(aes(xmin = -4.8, xmax = -3.2, ymin = -0.5, ymax = 0.1), fill = "grey50") +
   geom_bezier(data=top_brez_left, aes(x=x, y=y, group=group), colour="grey80") +
   geom_bezier(data=top_brez_right, aes(x=x, y=y, group=group), colour="grey80") +
-  geom_textbox(aes(x = 0, y = 2, box.size = 0.9), fill = "grey80", colour = "grey50", label = "Player name", family = "pretendo",
+  geom_textbox(aes(x = 0, y = 2, box.size = 0.9), fill = "grey80", colour = "grey50", label = "Name of player", family = "pretendo",
                box.r = unit(0.7, "lines"), width = 0.28, size = 3,
                halign = 0.5, valign = 0.5) +
   annotate("text", x = 4.4, y = 1.6, label = "Mushroom \nCup", size = 3, hjust = 0.5, family = "play") +
-  annotate("text", x = 6.1, y = 0.5, label = "Flower \nCup", size = 3, hjust = 0.5, family = "play") +
-  annotate("text", x = 4.4, y = -1.1, label = "Star \nCup", size = 3, hjust = 0.5, family = "play") +
+  annotate("text", x = 6.05, y = 0.5, label = "Flower \nCup", size = 3, hjust = 0.5, family = "play") +
+  annotate("text", x = 4.4, y = -1.2, label = "Star \nCup", size = 3, hjust = 0.5, family = "play") +
   annotate("text", x = 3, y = 0.5, label = "Special \nCup", size = 3, hjust = 0.5, family = "play") +
   annotate("text", x = 0, y = -1.4, label = "400 records", size = 3, hjust = 0.5, family = "play") +
   annotate("text", x = 2, y = -3.2, label = "100 \nrecords", size = 3, hjust = 0.5, family = "play") +
@@ -474,7 +474,7 @@ legend + controllers +
                   theme = theme(plot.caption.position = 'plot',
                                 plot.caption = element_text(family = "play")))
 
-ggsave(paste0("mario_kart_64_", format(Sys.time(), "%d%m%Y"), ".png"),
+ggsave(paste0("mario_kart_64_1", format(Sys.time(), "%d%m%Y"), ".png"),
        dpi = 320,
        width = 10,
        height = 14)
