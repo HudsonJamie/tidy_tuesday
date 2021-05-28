@@ -411,7 +411,7 @@ n64_plot <- function(data) {
                box.r = unit(0.7, "lines"), width = 0.28, size = 3,
                halign = 0.5, valign = 0.5) +
   annotate("text", x = 4.4, y = 1.6, label = "Mushroom \nCup", size = 3, hjust = 0.5, family = "play") +
-  annotate("text", x = 6.05, y = 0.5, label = "Flower \nCup", size = 3, hjust = 0.5, family = "play") +
+  annotate("text", x = 5.9, y = 0.5, label = "Flower \nCup", size = 3, hjust = 0.5, family = "play") +
   annotate("text", x = 4.4, y = -1.2, label = "Star \nCup", size = 3, hjust = 0.5, family = "play") +
   annotate("text", x = 3, y = 0.5, label = "Special \nCup", size = 3, hjust = 0.5, family = "play") +
   annotate("text", x = 0, y = -1.4, label = "400 records", size = 3, hjust = 0.5, family = "play") +
@@ -461,7 +461,7 @@ layout <- c(
   area( t = 5, l = 7, b = 8, r = 10),
   area( t = 5, l = 11, b = 8, r = 12))
 
-controllers <- A + D + E + plot_spacer() + C + B + plot_spacer() +
+controllers <- D + E + C + plot_spacer() + A + B + plot_spacer() +
   plot_layout(design = layout) & theme(plot.margin = margin(0,0,0,0, "cm"))
 
 layout_2 <- c(
@@ -474,7 +474,7 @@ legend + controllers +
                   theme = theme(plot.caption.position = 'plot',
                                 plot.caption = element_text(family = "play")))
 
-ggsave(paste0("mario_kart_64_1", format(Sys.time(), "%d%m%Y"), ".png"),
+ggsave(paste0("mario_kart_64_", format(Sys.time(), "%d%m%Y"), ".png"),
        dpi = 320,
        width = 10,
        height = 14)
