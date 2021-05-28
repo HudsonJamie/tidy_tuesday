@@ -102,7 +102,8 @@ best_drivers_3 <- best_drivers_2  %>%
   )
 
 # Shapes for N64 controller -------------------------------------------------------------
-
+# Much of this was taken from https://cran.microsoft.com/snapshot/2019-03-14/web/packages/ggforce/vignettes/Visual_Guide.html
+# especially the bezier script for the rocket at the bottom of the webpage
 beziers <- data.frame(
   x = c(-1.6, -1.3, 1.3, 1.6, -5.9, -6.8, -4.5, -3.4, 3.4, 4.5, 6.8, 5.9),
   y = c(-2, -10, -10, -2, -1, -7.5, -7.6, -2, -2, -7.6, -7.5, -1),
@@ -276,7 +277,9 @@ right_trigger <- do.call(rbind, lapply(seq_len(500)-1, function(i) {
 
 # N64 function ------------------------------------------------------------
 # Awfully messy code- I need to learn how to actually write functions :'(
-# but it does the job for now.
+# but it does the job for now. I really need to go through and 
+# comment what part of the controller each line produces
+
 n64_plot <- function(data) {
   if(data$nation == "USA") {
     col = "grey80"
