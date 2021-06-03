@@ -30,7 +30,7 @@ viewers <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/ti
   coord_cartesian(expand = FALSE) +
   guides(fill = guide_colorbar(title.position = 'bottom', title.hjust = .5,
                                 barwidth = unit(20, 'lines'), barheight = unit(1, 'lines'))) +
-  labs(fill = "Show rating per episode") +
+  labs(fill = "TV rating per episode") +
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
         panel.border = element_blank(),
@@ -95,10 +95,11 @@ viewership / ratings +
                                 plot.title.position = 'plot',
                                 plot.subtitle = element_text(size = 11),
                                 plot.caption.position = 'plot',
-                                plot.background = element_rect(fill = "grey25")))
+                                plot.background = element_rect(colour = "grey25",
+                                                               fill = "grey25")))
 
 ggsave(
-  paste0("survivor2", format(Sys.time(), "%d%m%Y"), ".png"),
+  paste0("survivor_", format(Sys.time(), "%d%m%Y"), ".png"),
   dpi = 320,
   width = 10,
   height = 7.5
