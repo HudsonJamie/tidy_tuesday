@@ -4,6 +4,13 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2021 week 25](/2021/week_25/) - #DuBoisChallenge tweets ✊🏿
+
+#DuBoisChallenge tweet data from Anthony Starks, Allen Hillery Sekou Tyler
+![dubois_twitter](/2021/week_25/dubois_twitter_17062021.png)
+
+----
+
 ## [2021 week 24](/2021/week_24/) - Great Lakes Fisheries 🎣
 
 Fishery data from Great Lakes Fishery Commission
