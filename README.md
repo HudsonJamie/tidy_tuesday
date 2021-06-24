@@ -4,6 +4,14 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2021 week 26](/2021/week_26/) - Park Access 🌳🇺🇸
+
+Public park access data from The Trust for Public Land
+![ny_park](/2021/week_26/ny_park_access_24062021.png)
+![il_park](/2021/week_26/il_park_access_24062021.png)
+
+----
+
 ## [2021 week 25](/2021/week_25/) - #DuBoisChallenge tweets ✊🏿
 
 #DuBoisChallenge tweet data from Anthony Starks, Allen Hillery Sekou Tyler
