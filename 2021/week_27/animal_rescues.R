@@ -125,6 +125,8 @@ circle <- tibble(lat = center["lat"], long = center["long"]) %>%
   st_buffer(dist = dist) %>% 
   st_transform(crs = 4326)
 
+# Crop data
+
 streets_cropped <- streets$osm_lines %>% st_intersection(circle)
 medium_cropped <- medium_streets$osm_lines %>% st_intersection(circle)
 small_cropped <- small_streets$osm_lines %>% st_intersection(circle)
@@ -145,12 +147,12 @@ data_cropped %>%
           alpha = .3) +
   geom_sf(data = streets_cropped,
           inherit.aes = FALSE,
-          color = "black",
+          color = "grey20",
           size = .2,
           alpha = .8) +
   geom_sf(data = medium_cropped,
           inherit.aes = FALSE,
-          color = "black",
+          color = "grey50",
           size = .2,
           alpha = .8) +
   geom_sf(data = rail_cropped,
@@ -160,7 +162,7 @@ data_cropped %>%
           alpha = .4) +
   geom_sf(data = small_cropped,
           inherit.aes = FALSE,
-          color = "black",
+          color = "grey60",
           size = .2,
           alpha = .8) +
   geom_sf(aes(geometry = geometry),
@@ -193,12 +195,12 @@ data_cropped %>%
           alpha = .3) +
   geom_sf(data = streets_cropped,
           inherit.aes = FALSE,
-          color = "black",
+          color = "grey20",
           size = .2,
           alpha = .8) +
   geom_sf(data = medium_cropped,
           inherit.aes = FALSE,
-          color = "black",
+          color = "grey50",
           size = .2,
           alpha = .8) +
   geom_sf(data = rail_cropped,
@@ -208,7 +210,7 @@ data_cropped %>%
           alpha = .4) +
   geom_sf(data = small_cropped,
           inherit.aes = FALSE,
-          color = "black",
+          color = "grey60",
           size = .2,
           alpha = .8) +
   geom_sf(aes(geometry = geometry),
@@ -241,12 +243,12 @@ data_cropped %>%
           alpha = .3) +
   geom_sf(data = streets_cropped,
           inherit.aes = FALSE,
-          color = "black",
+          color = "grey20",
           size = .2,
           alpha = .8) +
   geom_sf(data = medium_cropped,
           inherit.aes = FALSE,
-          color = "black",
+          color = "grey50",
           size = .2,
           alpha = .8) +
   geom_sf(data = rail_cropped,
@@ -256,7 +258,7 @@ data_cropped %>%
           alpha = .4) +
   geom_sf(data = small_cropped,
           inherit.aes = FALSE,
-          color = "black",
+          color = "grey60",
           size = .2,
           alpha = .8) +
   geom_sf(aes(geometry = geometry),
@@ -290,12 +292,12 @@ data_cropped %>%
           alpha = .3) +
   geom_sf(data = streets_cropped,
           inherit.aes = FALSE,
-          color = "black",
+          color = "grey20",
           size = .2,
           alpha = .8) +
   geom_sf(data = medium_cropped,
           inherit.aes = FALSE,
-          color = "black",
+          color = "grey50",
           size = .2,
           alpha = .8) +
   geom_sf(data = rail_cropped,
@@ -305,7 +307,7 @@ data_cropped %>%
           alpha = .4) +
   geom_sf(data = small_cropped,
           inherit.aes = FALSE,
-          color = "black",
+          color = "grey60",
           size = .2,
           alpha = .8) +
   geom_sf(aes(geometry = geometry),
@@ -336,4 +338,6 @@ img_joined <- lapply(imgs, image_read) %>%
 img_animated <- image_animate(img_joined, fps = 0.5)
 
 image_write(image = img_animated,
-            path = "animal_rescues.gif")
+            path = "animal_rescues.gif",
+            width = 7,
+            height = 8)
