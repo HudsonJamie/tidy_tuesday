@@ -338,6 +338,4 @@ img_joined <- lapply(imgs, image_read) %>%
 img_animated <- image_animate(img_joined, fps = 0.5)
 
 image_write(image = img_animated,
-            path = "animal_rescues.gif",
-            width = 7,
-            height = 8)
+            path = "animal_rescues.gif")
