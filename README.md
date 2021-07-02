@@ -4,6 +4,13 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2021 week 27](/2021/week_27/) - London animal rescues 🐱🐶
+
+Animal rescue data from from London.gov by way of Data is Plural and Georgios Karamanis
+![battersea_rescue](/2021/week_27/animal_rescues.gif)
+
+----
+
 ## [2021 week 26](/2021/week_26/) - Park Access 🌳🇺🇸
 
 Public park access data from The Trust for Public Land
