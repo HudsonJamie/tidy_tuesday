@@ -155,6 +155,7 @@ esp_fig +
       plot.caption = element_text(
         colour = "white",
         hjust = 0.98,
+        size = 6,
         margin = margin(-150, 0, 0)),
       plot.background = element_rect(colour = "black",
                                      fill = "black")))
