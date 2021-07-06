@@ -4,9 +4,16 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2021 week 28](/2021/week_28/) - Independence days 🌍🎆
+
+Independence Days data from  Wikipedia thanks to Isabella Velasquez
+![independence_days](/2021/week_28/independence_days_06072021.png)
+
+----
+
 ## [2021 week 27](/2021/week_27/) - London animal rescues 🐱🐶
 
-Animal rescue data from from London.gov by way of Data is Plural and Georgios Karamanis
+Animal rescue data from  London.gov by way of Data is Plural and Georgios Karamanis
 ![battersea_rescue](/2021/week_27/animal_rescues.gif)
 
 ----
