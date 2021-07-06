@@ -4,7 +4,7 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
-## [2021 week 28](/2021/week_28/) - Independence days 🌍
+## [2021 week 28](/2021/week_28/) - Independence days 🌍🎆
 
 Independence Days data from from Wikipedia thanks to Isabella Velasquez
 ![independence_days](/2021/week_28/independence_days_06072021.png)
