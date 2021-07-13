@@ -4,9 +4,16 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2021 week 29](/2021/week_29/) - Scooby Doo 🐕👻
+
+Date of Scooby Doo Episodes from Kaggle thanks thanks to manual data aggregation by plummye.
+![scooby_doo](/2021/week_29/scooby_doo_13072021.png)
+
+----
+
 ## [2021 week 28](/2021/week_28/) - Independence days 🌍🎆
 
-Independence Days data from  Wikipedia thanks to Isabella Velasquez
+Independence Days data from Wikipedia thanks to Isabella Velasquez
 ![independence_days](/2021/week_28/independence_days_06072021.png)
 
 ----
