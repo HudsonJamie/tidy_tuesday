@@ -152,7 +152,7 @@ jinkies_plot / zoinks_plot +
                   ))
 
 ggsave(
-  paste0("scooby_doo", format(Sys.time(), "%d%m%Y"), ".png"),
+  paste0("scooby_doo_", format(Sys.time(), "%d%m%Y"), ".png"),
   dpi = 320,
   width = 11,
   height = 12
