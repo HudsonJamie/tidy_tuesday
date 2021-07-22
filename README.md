@@ -4,9 +4,16 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2021 week 30](/2021/week_30/) - US Droughts 🌵
+
+US Drought data courtesy of the U.S. Drought Monitor
+![ca_droughts](/2021/week_30/ca_drought_22072021.gif)
+
+----
+
 ## [2021 week 29](/2021/week_29/) - Scooby Doo 🐕👻
 
-Date of Scooby Doo Episodes from Kaggle thanks thanks to manual data aggregation by plummye.
+Data of Scooby Doo Episodes from Kaggle thanks thanks to manual data aggregation by plummye.
 ![scooby_doo](/2021/week_29/scooby_doo_13072021.png)
 
 ----
