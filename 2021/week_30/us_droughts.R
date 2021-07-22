@@ -63,8 +63,7 @@ ca_drought <- drought_level %>%
   scale_colour_viridis_c(option = "inferno", limits = c(0, 100),
                          breaks=c(0, 50, 100), labels=c("0%", "50%", "100%")) +
   scale_x_date(breaks = "1 month", date_labels = "%B") +
-  labs(title = "California under drought conditions 
-       \n",
+  labs(title = "California under drought conditions",
        subtitle = "Percetange of California experiencing at least 'severe drought' conditions \nbetween July 2001 and July 2021. \nYear: {closest_state}",
        x = "Month",
        y = "Percetange of California under X",
@@ -83,9 +82,8 @@ ca_drought <- drought_level %>%
         panel.grid = element_blank(),
         panel.grid.major.x = element_blank(),
         plot.title = element_text(family = "merriweather", face = "bold",
-                                  size = 22,
-                                  lineheight = 1.1),
-        plot.subtitle = element_text(size = 12),
+                                  size = 22),
+        plot.subtitle = element_text(size = 12, vjust = 0.1),
         plot.caption = element_text(family =  "merriweather")))
 
 anim <- plot +
@@ -93,8 +91,8 @@ anim <- plot +
                     state_length = 2) +
   shadow_mark(color = 'grey50', alpha = 0.5, past = T)
 
-animate(anim, nframes = 20, 
+animate(anim, nframes = 500, 
         height = 8, width = 8, units = "in", res = 150)
 
-anim_save(paste0("ca_drought_3_", format(Sys.time(), "%d%m%Y"), ".gif"))
+anim_save(paste0("ca_drought_", format(Sys.time(), "%d%m%Y"), ".gif"))
 
