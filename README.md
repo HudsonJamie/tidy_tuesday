@@ -7,7 +7,7 @@ Please send me any hints or tips you may have on [Twitter](https://twitter.com/J
 ## [2021 week 30](/2021/week_30/) - US Droughts 🌵
 
 US Drought data courtesy of the U.S. Drought Monitor
-![ca_droughts](/2021/week_30/ca_drought_22072021.gif)
+![ca_droughts](/2021/week_30/ca_drought_23072021.gif)
 
 ----
 
