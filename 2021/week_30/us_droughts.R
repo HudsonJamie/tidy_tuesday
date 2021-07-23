@@ -1,7 +1,7 @@
 # us_droughts.R
 # Jamie Hudson
 # Created: 21 Jul 2021
-# Edited: 22 Jul 2021
+# Edited: 23 Jul 2021
 # Data: U.S. Drought Monitor (https://droughtmonitor.unl.edu/DmData/DataDownload/ComprehensiveStatistics.aspx)
 
 # load libraries ----------------------------------------------------------
@@ -64,9 +64,8 @@ ca_drought <- drought_level %>%
                          breaks=c(0, 50, 100), labels=c("0%", "50%", "100%")) +
   scale_x_date(breaks = "1 month", date_labels = "%B") +
   labs(title = "California under drought conditions",
-       subtitle = "Percetange of California experiencing at least 'severe drought' conditions \nbetween July 2001 and July 2021. \nYear: {closest_state}",
+       subtitle = "Percentage of California experiencing at least 'severe drought' conditions \nbetween July 2001 and July 2021. \nYear: {closest_state}",
        x = "Month",
-       y = "Percetange of California under X",
        colour = "",
        caption = "@jamie_bio | source = U.S. Drought Monitor") +
   guides(colour = guide_colorbar(title.position = 'bottom', title.hjust = 0.5,
