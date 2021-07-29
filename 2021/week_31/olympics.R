@@ -103,7 +103,7 @@ rio <- readPNG("data/rio.png", T)
                       limits = c(0, 60)) +
    labs(y = "Percentage of competing athletes \nwho are female",
         x = "Year",
-        subtitle = "We are approaching an equal percentage of female and male athletes \nat the Summer Olympics.") +
+        subtitle = "We are approaching an equal percentage of female and male athletes at the \nSummer Olympics.") +
    coord_cartesian(clip = 'off') +
    theme_bw() +
    theme(text = element_text(family = "lato"),
