@@ -169,10 +169,13 @@ rio <- readPNG("data/rio.png", T)
                         clip = F)) / plot_2 +
   plot_annotation(
     title = 'Women in the Olympics',
+    caption = "@jamie_bio | source: rgriffin on Kaggle",
     theme = theme(text = element_text(family = "lato", colour = "#194586"),
                   plot.title = element_markdown(size = 20, face = "bold",
                                                 margin = margin(15,0,5,0),
-                                                hjust = 0.27))) 
+                                                hjust = 0.27),
+                  plot.caption = element_text(size = 6, colour = "grey50")
+    )) 
 
 ggsave(
   paste0("summer_olympics_1_", format(Sys.time(), "%d%m%Y"), ".png"),
@@ -194,7 +197,8 @@ ggsave(
                        limits = c(0, 110)) +
     expand_limits(x= c(0, 32)) +
     labs(title = "Superwomen in 2016",
-         subtitle = "Twenty-nine countries had female athletes that won a greater percentage of \nmedals than expected based on the percentage of competing athletes from \nthe country that were female.") +
+         subtitle = "Twenty-nine countries had female athletes that won a greater percentage of \nmedals than expected, based on the percentage of competing athletes from \nthe country that were female.",
+         caption = "@jamie_bio | source: rgriffin on Kaggle") +
     scale_color_manual(values = c("#20A14D", "#F5C300")) +
     annotate("text", label = "The percentage of athletes \nthat were female", x = 30.5, y = 30, size = 2.5,
              colour = "#20A14D") +
@@ -207,6 +211,7 @@ ggsave(
                                         margin = margin(15,0,15,0)),
           plot.subtitle = element_text(face = "italic",
                                        size = 9),
+          plot.caption = element_text(size = 6, colour = "grey50"),
           panel.grid = element_blank(),
           panel.border = element_blank(),
           axis.line.x = element_line(colour = "black", size = 0.3),
