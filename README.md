@@ -4,6 +4,16 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+
+## [2021 week 31](/2021/week_31/) - Olympics 🏅
+
+Olympic data from Kaggle
+![summer_olympics_1](/2021/week_31/summer_olympics_1_29072021.png)
+
+![summer_olympics_2](/2021/week_31/summer_olympics_2_29072021.png)
+
+----
+
 ## [2021 week 30](/2021/week_30/) - US Droughts 🌵
 
 US Drought data courtesy of the U.S. Drought Monitor
