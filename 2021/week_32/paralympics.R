@@ -1,8 +1,8 @@
-# file_name
+# paralympics.R
 # Jamie Hudson
-# Created: Date
-# Edited: Date
-# Data: Data
+# Created: 09 Aug 2021
+# Edited: 10 Aug 2021
+# Data: International Paralympic Committee
 
 # load libraries ------------------------------------------------------------
 
@@ -20,7 +20,6 @@ showtext_auto()
 
 tuesdata <- tidytuesdayR::tt_load(2021, week = 32)
 athletes <- tuesdata$athletes
-athletes <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-08-03/athletes.csv')
 
 # wrangle data ------------------------------------------------------------
 
@@ -29,9 +28,6 @@ athletes %>%
 
 athletes %>%
   glimpse()
-
-athletes  %>%
-  count(country)
 
 irl_ath <- athletes %>% 
   filter(abb == "IRL",
