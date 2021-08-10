@@ -83,7 +83,7 @@ irl <- readPNG("images/irl.png", T)
 
 (plot_1 <- irl_ath %>% 
   ggplot(aes(x = year, y = id, fill = medal)) +
-  geom_point(shape = 21, size = 4, stroke = 0, 
+  geom_point(shape = 21, size = 3.7, stroke = 0, 
              alpha = 0.5) +
   scale_fill_manual(values = c("#CD7F32", "#FFD700", "#C0C0C0")) +
   scale_x_continuous(breaks = seq(from = 1980, to = 2016, by = 4)) +
