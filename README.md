@@ -4,6 +4,12 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2021 week 32](/2021/week_32/) - Paralympics 🏅
+
+Paralympic data from the International Paralympic Committee
+![paralympics](/2021/week_32/paralympics_10082021.png)
+
+----
 
 ## [2021 week 31](/2021/week_31/) - Olympics 🏅
 
