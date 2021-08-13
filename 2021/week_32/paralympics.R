@@ -56,12 +56,14 @@ irl_ath %>%
 gallagher <- irl_ath %>% 
   filter(athlete == "GALLAGHER Rosaleen") %>% 
   ungroup() %>% 
+  arrange(num) %>% 
   mutate(id = row_number())
 
 #TYNAN Ronan
 tynan <- irl_ath %>% 
   filter(athlete == "TYNAN Ronan") %>% 
   ungroup() %>% 
+  arrange(num) %>% 
   mutate(id = row_number())
 
 top_athletes <- rbind(gallagher, tynan) %>% 
@@ -83,8 +85,9 @@ irl <- readPNG("images/irl.png", T)
              alpha = 0.5) +
   scale_fill_manual(values = c("#CD7F32", "#FFD700", "#C0C0C0")) +
   scale_x_continuous(breaks = seq(from = 1980, to = 2016, by = 4)) +
-  labs(title = "Athletic medals won for <span style = 'color:#169B62;'>Ireland</span> in  \nthe Paralympic Games since 1980") +
-  annotate("text", label = "Medals \nwon =", x = 1980, y = 14,
+  labs(title = "Athletic medals won for <span style = 'color:#169B62;'>Ireland</span> in  \nthe Paralympic Games since 1980",
+       caption = "@jamie_bio | source: International Paralympic Committee") +
+  annotate("text", label = "Medals \nwon =", x = 1980, y = 15,
            colour = "darkgreen", family = "raleway") +
   geom_text(data = irl_ath_2, mapping = aes(x = year, y = n, label = id),
             colour = "darkgreen", family = "raleway") +
@@ -106,6 +109,7 @@ irl <- readPNG("images/irl.png", T)
         panel.border = element_blank(),
         axis.title = element_blank(),
         plot.margin = margin(20, 5.5, 5.5, 5.5),
+        plot.caption = element_text(size = 7),
         plot.title = element_markdown(hjust = 0.5),
         axis.text.y = element_blank(),
         axis.ticks = element_blank(),
@@ -130,7 +134,7 @@ irl <- readPNG("images/irl.png", T)
         axis.text.x = element_blank(),
         axis.ticks = element_blank()))
 
-plot_1 + inset_element(plot_2, 0.55, 0.7, 0.99, 0.9) +
+plot_1 + inset_element(plot_2, 0.55, 0.65, 0.99, 0.9) +
   inset_element(img, 0, 0.99, 0.2, 1.09, 
                   clip = F) +
   inset_element(irl, 0.8, 0.95, 1, 1.12, 
