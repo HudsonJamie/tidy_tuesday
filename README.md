@@ -7,7 +7,7 @@ Please send me any hints or tips you may have on [Twitter](https://twitter.com/J
 ## [2021 week 32](/2021/week_32/) - Paralympics 🏅
 
 Paralympic data from the International Paralympic Committee
-![paralympics](/2021/week_32/paralympics_10082021.png)
+![paralympics](/2021/week_32/paralympics_13082021.png)
 
 ----
 
