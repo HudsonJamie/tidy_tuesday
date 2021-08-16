@@ -99,7 +99,7 @@ plot_1 + plot_2 +
   plot_layout(guides = "collect") +
   plot_annotation(
     title = 'U.S. Investment in Conservation and Development',
-    subtitle = "On the 6th August 2021, the Intergovernmental Panel on Climate Change (IPCC) finalised its Sixth Assessment Report. \nDespite a damning assessment on the climate crisis affecting the world, investment in infrastructure relating to \nConservation and Development (dams, levees, sea walls, and related assets) is not increasing with inflation.",
+    subtitle = "On the 6th August 2021, the Intergovernmental Panel on Climate Change (IPCC) finalised its Sixth Assessment Report. \nDespite a damning assessment on the climate crisis affecting the world, investment in infrastructure relating to Conservation \nand Development (dams, levees, sea walls, and related assets) is not increasing with inflation.",
     caption = "@jamie_bio | source:  Bureau of Economic Analysis",
     theme = theme(panel.background = element_rect(fill = "#432d4a"),
                   plot.background = element_rect(fill = "#432d4a"),
