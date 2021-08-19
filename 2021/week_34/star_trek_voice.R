@@ -12,6 +12,7 @@ library(ggbump)
 library(ggforce)
 library(patchwork)
 library(showtext)
+library(g)
 font_add_google("Rambla", "rambla")
 showtext_auto()
 
@@ -58,7 +59,7 @@ df_2 <- df %>%
                  color = "grey90", linetype = "dotted", size = 0.2) +
     geom_sigmoid(aes(x = type, y = -3, xend = 4, yend = -18, group = factor(type)),
                  direction = "y", color = "grey90", smooth = 5,
-                 size = 0.3) + 
+                 size = 0.2) + 
     geom_text(aes(x = 4, y = -22, label = char),
               colour = "grey90", family = "rambla", size = 3.5) +
     geom_text(aes(y = n + 2.5, label = n),
@@ -105,7 +106,7 @@ legend_df <- tribble(
                  color = "grey90", linetype = "dotted", size = 0.2) +
     geom_sigmoid(aes(x = as.numeric(type), y = -10, xend = 4, yend = -77, group = factor(type)),
                  direction = "y", color = "grey90", smooth = 5,
-                 size = 0.3) + 
+                 size = 0.2) + 
     geom_richtext(aes(y = n + 1, label = type), hjust = 0,
                   colour = "grey90", size = 2, angle = 90,
                   fill = "#02071D", label.colour = NA, family = "rambla") +
