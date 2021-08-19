@@ -4,6 +4,13 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2021 week 34](/2021/week_34/) - Star Trek voice commands 🚀🖖
+
+Star Trek voice command data from SpeechInteraction.org.
+![infrastructure_spending](/2021/week_34/star_trek_19082021.png)
+
+----
+
 ## [2021 week 33](/2021/week_33/) - U.S. Infrastructure investment 💰
 
 Infrastructure investment data from the Bureau of Economic Analysis.
