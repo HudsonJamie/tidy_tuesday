@@ -85,7 +85,7 @@ r <- rasterGrob(loris, interpolate = TRUE)
 )
 
 p1 + p2 +
-  plot_annotation(title = "Lorises and the Simpson's Paradox at Duke Lemur Center",
+  plot_annotation(title = "Lorises and the Simpson's Paradox at the Duke Lemur Center",
                   subtitle = "Lorises are strepsirrhine primates, a group containing lemurs, bushbabies, and pottos, with two genera: *Loris* and *Nycticebus*.  \nThis dataset exhibits a nice example of **Simpson's Paradox**: a phenomenon whereby an association between two variables in a population emerges  \n(i.e. a negative relationship between age of female parents at conception and the maximum age the offspring reaches), but disappears or reverses  \nwhen the population is divided into subpopulations (i.e. species).  \n  \n <span style = 'color:#E2595B;'>*Fun Fact*: *Slow lorises secret a toxin from glands on their elbows, which is activated by mixing with saliva, making them one of world's few  \nvenemous mammals*</span>",
                   caption = "@jamie_bio | source: Zehr et al. (2014) Sci. Data | Photo courtesy of Vladimir Buynevich on Flickr (CC BY 2.0), www.nocturama.org",
                   theme = theme(panel.background = element_rect(fill = "#EAEAEA"),
