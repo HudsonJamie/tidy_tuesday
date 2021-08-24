@@ -2,7 +2,7 @@
 # Jamie Hudson
 # Created: 24 August 2021
 # Edited: 24 August 2021
-# Data: Zehr et al. 2014
+# Data: Zehr et al. 2014. Photo from https://www.flickr.com/photos/vladimir_buynevich/31624248028
 
 # load libraries ------------------------------------------------------------
 
