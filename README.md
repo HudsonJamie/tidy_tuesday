@@ -7,7 +7,7 @@ Please send me any hints or tips you may have on [Twitter](https://twitter.com/J
 ## [2021 week 34](/2021/week_34/) - Star Trek voice commands 🚀🖖
 
 Star Trek voice command data from SpeechInteraction.org.
-![infrastructure_spending](/2021/week_34/star_trek_20082021.png)
+![star_trek](/2021/week_34/star_trek_20082021.png)
 
 ----
 
