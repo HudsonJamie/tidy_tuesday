@@ -4,6 +4,13 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2021 week 35](/2021/week_35/) - Lemurs 🙉 (we need an Aye-Aye emoji)
+
+Lemur data from Duke Lemur Center & Zehr et al. (2014) Sci. Data
+![lemurs](/2021/week_35/lemurs_24082021.png)
+
+----
+
 ## [2021 week 34](/2021/week_34/) - Star Trek voice commands 🚀🖖
 
 Star Trek voice command data from SpeechInteraction.org.
