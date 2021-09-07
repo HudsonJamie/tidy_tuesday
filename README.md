@@ -4,6 +4,17 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2021 week 37](/2021/week_37/) - Formula One 🏎
+
+Formula One data from the Ergast API
+![formula_1](/2021/week_37/hamilton_f1_07092021.png)
+
+![formula_1](/2021/week_37/schumacher_f1_07092021.png)
+
+![formula_1](/2021/week_37/vettel_f1_07092021.png)
+
+----
+
 ## [2021 week 36](/2021/week_36/) - Australian bird baths 🦜
 
 Bird bath data from Cleary *et al*., (2016) PLOS ONE 11(3): e0150899
