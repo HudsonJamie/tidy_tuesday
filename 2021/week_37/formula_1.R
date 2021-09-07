@@ -26,6 +26,8 @@ results <- tuesdata$results
 
 # wrangle data ------------------------------------------------------------
 
+# Also add results as "position" from driver_standings is position in whole
+# championship, not position in race
 driver_results_df <- driver_standings %>% 
   left_join(races, by = "raceId") %>% 
   rename(driver_url = url) %>% 
