@@ -91,7 +91,7 @@ driver_results_df %>%
            colour = "white", x = c(1, 21, 10), y = c(2022, 2022, 2023), size = 3.5,
            family = "lato") +
   annotate(geom = "text", label = c("1st Championship", "2nd Championship", "3rd Championship", "4th Championship", "5th Championship", "6th Championship", "7th Championship"), 
-           colour = "white", x = c(20, 21, 21, 22, 23, 24, 19), y = c(2008, 2014, 2015, 2017, 2018, 2019, 2020), 
+           colour = "white", x = c(20, 21, 21, 22, 23, 23, 19), y = c(2008, 2014, 2015, 2017, 2018, 2019, 2020), 
            size = 2.5, hjust = 0, family = "lato") +
   geom_segment(data = hamilton.arrows, aes(x = x, y = y, xend = xend, yend = yend),
                inherit.aes = FALSE,
