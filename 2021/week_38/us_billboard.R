@@ -1,7 +1,7 @@
 # us_billboard.R
 # Jamie Hudson
-# Created: 14 Sep 2021
-# Edited: 14 Sep 2021
+# Created: 15 Sep 2021
+# Edited: 15 Sep 2021
 # Data: Data.World by way of Sean Miller, Billboard.com and Spotify
 
 # load libraries ------------------------------------------------------------
@@ -81,7 +81,7 @@ bar_lines <- tibble(x1 = c(6.5, 10.5, 12.5, 14.5, 16.5, 18.5),
 # plot ------------------------------------------------------------
 
 A <- ggplot(beatles, aes(x = id, y = as.numeric(valence_group))) +
-    geom_point(size = 2.8) +
+    geom_point(size = 2) +
     lims(y = c(-1,15)) +
     geom_hline(yintercept = c(3,5,7,9,11), size = 0.2) +
     geom_segment(data = bar_lines, (aes(x = x1, y = y1, xend = x2, yend = y2)), 
@@ -107,10 +107,10 @@ A <- ggplot(beatles, aes(x = id, y = as.numeric(valence_group))) +
     annotate("curve", x = 17, xend = 18, y = 1.2, yend = 7.6, 
              colour = "black", size = 0.2, arrow = arrow(length = unit(0.15, "cm")),
              curvature = 0.2) +
-    geom_segment(data = beatles_low_valence, aes(x = id + 0.16, y = as.numeric(valence_group), xend = id + 0.16, yend = as.numeric(valence_group) + 6), 
+    geom_segment(data = beatles_low_valence, aes(x = id + 0.11, y = as.numeric(valence_group), xend = id + 0.11, yend = as.numeric(valence_group) + 6), 
                  colour = "black",
                  size = 0.4) +
-    geom_segment(data = beatles_high_valence, aes(x = id - 0.16, y = as.numeric(valence_group), xend = id - 0.16, yend = as.numeric(valence_group) - 6), 
+    geom_segment(data = beatles_high_valence, aes(x = id - 0.11, y = as.numeric(valence_group), xend = id - 0.11, yend = as.numeric(valence_group) - 6), 
                  colour = "black",
                  size = 0.4) +
     geom_rect(aes(xmin = 16.8, ymin = 8.2, xmax = 17.2, ymax = 9), fill = "black") +
@@ -126,16 +126,16 @@ A <- ggplot(beatles, aes(x = id, y = as.numeric(valence_group))) +
           axis.title = element_blank())
 
 B <- ggplot(beatles, aes(x = id, y = as.numeric(loundess_group))) +
-  geom_point(size = 2.8) +
+  geom_point(size = 2) +
   lims(y = c(-1,15)) +
   geom_hline(yintercept = c(3,5,7,9,11), size = 0.2) +
   geom_segment(data = bar_lines, (aes(x = x1, y = y1, xend = x2, yend = y2)), 
                colour = "black",
                size = 0.5) +
-  geom_segment(data = beatles_low_loud, aes(x = id + 0.16, y = as.numeric(loundess_group), xend = id + 0.16, yend = as.numeric(loundess_group) + 6), 
+  geom_segment(data = beatles_low_loud, aes(x = id + 0.11, y = as.numeric(loundess_group), xend = id + 0.11, yend = as.numeric(loundess_group) + 6), 
                colour = "black",
                size = 0.4) +
-  geom_segment(data = beatles_high_loud, aes(x = id - 0.16, y = as.numeric(loundess_group), xend = id - 0.16, yend = as.numeric(loundess_group) - 6), 
+  geom_segment(data = beatles_high_loud, aes(x = id - 0.11, y = as.numeric(loundess_group), xend = id - 0.11, yend = as.numeric(loundess_group) - 6), 
                colour = "black",
                size = 0.4) +
   geom_rect(aes(xmin = 16.8, ymin = 8.2, xmax = 17.2, ymax = 9), fill = "black") +
@@ -151,16 +151,16 @@ B <- ggplot(beatles, aes(x = id, y = as.numeric(loundess_group))) +
         axis.title = element_blank())
 
 C <- ggplot(beatles, aes(x = id, y = as.numeric(speechiness_group))) +
-  geom_point(size = 2.8) +
+  geom_point(size = 2) +
   lims(y = c(-1,15)) +
   geom_hline(yintercept = c(3,5,7,9,11), size = 0.2) +
   geom_segment(data = bar_lines, (aes(x = x1, y = y1, xend = x2, yend = y2)), 
                colour = "black",
                size = 0.5) +
-  geom_segment(data = beatles_low_speech, aes(x = id + 0.16, y = as.numeric(speechiness_group), xend = id + 0.16, yend = as.numeric(loundess_group) + 6), 
+  geom_segment(data = beatles_low_speech, aes(x = id + 0.11, y = as.numeric(speechiness_group), xend = id + 0.11, yend = as.numeric(speechiness_group) + 6), 
                colour = "black",
                size = 0.4) +
-  geom_segment(data = beatles_high_speech, aes(x = id - 0.16, y = as.numeric(speechiness_group), xend = id - 0.16, yend = as.numeric(loundess_group) - 6), 
+  geom_segment(data = beatles_high_speech, aes(x = id - 0.11, y = as.numeric(speechiness_group), xend = id - 0.11, yend = as.numeric(speechiness_group) - 6), 
                colour = "black",
                size = 0.4) +
   geom_rect(aes(xmin = 16.8, ymin = 8.2, xmax = 17.2, ymax = 9), fill = "black") +
@@ -176,16 +176,16 @@ C <- ggplot(beatles, aes(x = id, y = as.numeric(speechiness_group))) +
         axis.title = element_blank())
 
 (D <- ggplot(beatles, aes(x = id, y = as.numeric(dance_group))) +
-    geom_point(size = 2.8) +
+    geom_point(size = 2) +
     lims(y = c(-1,15)) +
     geom_hline(yintercept = c(3,5,7,9,11), size = 0.2) +
     geom_segment(data = bar_lines, (aes(x = x1, y = y1, xend = x2, yend = y2)), 
                  colour = "black",
                  size = 0.5) +
-    geom_segment(data = beatles_low_dance, aes(x = id + 0.16, y = as.numeric(dance_group), xend = id + 0.16, yend = as.numeric(dance_group) + 6), 
+    geom_segment(data = beatles_low_dance, aes(x = id + 0.11, y = as.numeric(dance_group), xend = id + 0.11, yend = as.numeric(dance_group) + 6), 
                  colour = "black",
                  size = 0.5) +
-    geom_segment(data = beatles_high_dance, aes(x = id - 0.16, y = as.numeric(dance_group), xend = id - 0.16, yend = as.numeric(dance_group) - 6), 
+    geom_segment(data = beatles_high_dance, aes(x = id - 0.11, y = as.numeric(dance_group), xend = id - 0.11, yend = as.numeric(dance_group) - 6), 
                  colour = "black",
                  size = 0.5) +
     geom_rect(aes(xmin = 16.8, ymin = 8.2, xmax = 17.2, ymax = 9), fill = "black") +
@@ -208,7 +208,7 @@ C <- ggplot(beatles, aes(x = id, y = as.numeric(speechiness_group))) +
 
 A/B/C/D +
   plot_annotation(title = 'The Beatles` hits in America',
-                  subtitle = "The Beatles achieved a total of ***20 US Billboard number one hits***.  \nThis sheet music of **scaled data** was created by normalising Spotify's audio features (between 0-1), and splitting  \nthese values into intervals of size 0.1. The subsequent 10 intervals were then assigned a music note from C4  \n(the lowest value) to E5 (the highest value). Those songs without Spotify data are denoted with a break.",
+                  subtitle = "The Beatles achieved a total of **20 US Billboard number one hits**.  \nThis sheet music of **scaled data** was created by normalising Spotify's audio features (between 0-1), and splitting  \nthese values into intervals of size 0.1. The subsequent 10 intervals were then assigned a music note from C4  \n(the lowest value) to E5 (the highest value). Those songs without Spotify data are denoted with a break.",
                   caption = "@jamie_bio | source: Data.World by way of Sean Miller, Billboard.com and Spotify",
                   theme = theme(plot.title = element_text(size = 28,
                                                           colour = "black", family = "lime",
