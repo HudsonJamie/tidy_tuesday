@@ -208,7 +208,7 @@ C <- ggplot(beatles, aes(x = id, y = as.numeric(speechiness_group))) +
 
 A/B/C/D +
   plot_annotation(title = 'The Beatles` hits in America',
-                  subtitle = "The Beatles achieved a total of **20 US Billboard number one hits**.  \nThis sheet music of **scaled data** was created by normalising Spotify's audio features (between 0-1), and splitting  \nthese values into intervals of size 0.1. The subsequent 10 intervals were then assigned a music note from C4  \n(the lowest value) to E5 (the highest value). Those songs without Spotify data are denoted with a break.",
+                  subtitle = "The Beatles achieved a total of **20 US Billboard number one hits**.  \nThis sheet music of **scaled data** was created by min-max scaling Spotify's audio features (between 0-1), and splitting  \nthese values into intervals of size 0.1. The subsequent 10 intervals were then assigned a music note from C4  \n(the lowest value) to E5 (the highest value). Those songs without Spotify data are denoted with a break.",
                   caption = "@jamie_bio | source: Data.World by way of Sean Miller, Billboard.com and Spotify",
                   theme = theme(plot.title = element_text(size = 28,
                                                           colour = "black", family = "lime",
