@@ -147,7 +147,7 @@ ggplot(hbo_netflix, aes(x = year, y = n, colour = distributor)) +
                      limits = c(0, 155)) +
   labs(title = "<span style='color:#E60822;'>**Netflix**</span> overtakes <span style='color:black;'>**HBO**</span> since the 2017 Emmys",
        subtitle = "This is a recreation of a plot produced by Susie Lu which compared Emmy nominations of HBO & Netflix, as well as other networks (up to 2017). \nIt appears the TidyTuesday dataset is missing some data (especially in 2014), as some values do not match Susie's plot (itself a makeover of \nplots via The Verge and Statistica).",
-       caption = "@jamie_bio | source: emmys.com") +
+       caption = "@jamie_bio | source: emmys.com & original plot from https://www.susielu.com/data-viz/emmy-2017") +
   theme(
     panel.background = element_blank(),
     panel.grid.minor = element_blank(),
