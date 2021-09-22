@@ -4,7 +4,14 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
-## [2021 week 38](/2021/week_37/) - US Billboard Top 100 🎼
+## [2021 week 39](/2021/week_39/) - Emmy awards 🏆
+
+Emmy award data from emmys.com
+![us_billboard](/2021/week_39/emmys_22092021.png)
+
+----
+
+## [2021 week 38](/2021/week_38/) - US Billboard Top 100 🎼
 
 US Billboard data from Data.World by way of Sean Miller, Billboard.com and Spotify
 ![us_billboard](/2021/week_38/us_billboard_15092021.png)
