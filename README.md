@@ -4,6 +4,14 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+
+## [2021 week 41](/2021/week_41/) - US registered nurses 🏥
+
+Registered nurse data from Data.World
+![us_nurses](/2021/week_41/nurses_05102021.png)
+
+----
+
 ## [2021 week 39](/2021/week_39/) - Emmy awards 🏆
 
 Emmy award data from emmys.com
