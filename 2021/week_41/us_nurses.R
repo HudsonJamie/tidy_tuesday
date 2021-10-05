@@ -67,7 +67,7 @@ nurses_map <- left_join(states_map, nurses_2020, by = "state")
           axis.ticks = element_blank(),
           legend.position = "none"))
 
-ggplot(nurses_2020, aes(x = reorder(state, diff_med), y = diff_med)) +
+ggplot(nurses_2020, aes(x = reorder(state, -diff_med), y = diff_med)) +
   geom_bar(stat = "identity", aes(fill = diff_med)) +
   geom_hline(yintercept = 0, colour = "grey80",
              size = 0.2) +
@@ -77,11 +77,10 @@ ggplot(nurses_2020, aes(x = reorder(state, diff_med), y = diff_med)) +
             size = 1.2, colour = "grey50",
             family = "lato") +
   labs(title = "**Median** salaries of Registered Nurses in the US",
-       subtitle = "The difference between **median** salaries of registered nurses of each state and the national **median** value ($71,280) in the year 2020.  \nThere is a clear band within the US of States with <span style='color:#DFC27D;'>lower than average salaries</span> surrounded by those with <span style='color:#35978F;'>higher than average salaries</span>. ",
+       subtitle = "The difference between **median** annual salaries of registered nurses of each state and the national **median** annual value ($71,280) for the year 2020.  \nThere is a clear band within the US of States with <span style='color:#DFC27D;'>lower than average salaries</span> surrounded by those with <span style='color:#35978F;'>higher than average salaries</span>. ",
        caption = "@jamie_bio | source: Data.World") +
   scale_y_continuous(labels = function(x) ifelse(x > 0, paste0("+ $", x), ifelse(x < 0, paste0("- $", abs(x)), x)),
                      limits = c(-18000, 49000)) +
-  # scale_y_continuous(labels = scales::dollar_format()) +
   theme_bw() +
   theme(axis.text.x = element_blank(),
         axis.text.y = element_text(colour = "grey50",
@@ -103,7 +102,7 @@ ggplot(nurses_2020, aes(x = reorder(state, diff_med), y = diff_med)) +
         plot.caption = element_text(colour = "grey65",
                                     family = "lato",
                                     size = 5.5)) +
-  inset_element(map, left = 0, right = 0.7, bottom = 0.3, top = 1.1)
+  inset_element(map, left = 0.3, right = 1.1, bottom = 0.3, top = 1)
 
 ggsave(
   paste0("nurses_", format(Sys.time(), "%d%m%Y"), ".png"),
