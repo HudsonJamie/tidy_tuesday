@@ -77,7 +77,7 @@ ggplot(nurses_2020, aes(x = reorder(state, diff_med), y = diff_med)) +
             size = 1.2, colour = "grey50",
             family = "lato") +
   labs(title = "**Median** salaries of Registered Nurses in the US",
-       subtitle = "The difference between **median** salaries of registered nurses of each state and the national **median** value ($71,280).  \nThere is a clear band within the US of States with <span style='color:#DFC27D;'>lower than average salaries</span> surrounded by those with <span style='color:#35978F;'>higher than average salaries</span>. ",
+       subtitle = "The difference between **median** salaries of registered nurses of each state and the national **median** value ($71,280) in the year 2020.  \nThere is a clear band within the US of States with <span style='color:#DFC27D;'>lower than average salaries</span> surrounded by those with <span style='color:#35978F;'>higher than average salaries</span>. ",
        caption = "@jamie_bio | source: Data.World") +
   scale_y_continuous(labels = function(x) ifelse(x > 0, paste0("+ $", x), ifelse(x < 0, paste0("- $", abs(x)), x)),
                      limits = c(-18000, 49000)) +
