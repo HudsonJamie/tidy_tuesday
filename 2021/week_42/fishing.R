@@ -84,7 +84,7 @@ ggplot(sustain, aes(x = Year, y = overexploited)) +
         plot.background = element_blank(),
         axis.ticks = element_blank())
   
-ggsave(paste0("globa_fishing_", format(Sys.time(), "%d%m%Y"), ".png"),
+ggsave(paste0("global_fishing_", format(Sys.time(), "%d%m%Y"), ".png"),
        dpi = 320,
        width = 9,
        height = 6)
