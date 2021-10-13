@@ -1,4 +1,4 @@
-# Global Fishing.R
+# global_fishing.R
 # Jamie Hudson
 # Created: 13 October 2021
 # Edited: 13 October 2021
@@ -63,7 +63,7 @@ ggplot(sustain, aes(x = Year, y = overexploited)) +
             angle = 60, size = 2.5, colour = "#0575A4",
             family = "roboto") +
   annotate("text", label = c("0%", "10%", "34%"), x = c(1971, 1971, 1971), y = c(0, 10, 34),
-            size = 3, colour = "#0575A4", fontface = "bold") +
+           size = 3, colour = "#0575A4", fontface = "bold") +
   geom_richtext(label = "J", aes(x = Year - 0.119, y = 0.3),
                 size = 4, colour = "white", family = "roboto",
                 fill = NA, label.color = NA) +
@@ -71,7 +71,7 @@ ggplot(sustain, aes(x = Year, y = overexploited)) +
                 x = 1970.5, y = 41, hjust = 0,
                 size = 10, family = "oswald",
                 fill = NA, label.color = NA) +
-  geom_text(label = "The percentage share of fish stocks that are exploited has been rising since 1974. Note though that the values are still \n<50% meaning most fish stocks are within biologically sustainable levels (FAO, 2020).", 
+  geom_text(label = "The percentage share of fish stocks that are exploited has been rising since 1974. Note the y-axis though, the values are \nstill <50% meaning most fish stocks are within biologically sustainable levels (FAO, 2020).", 
             x = 1971, y = 38.5, hjust = 0, vjust = 1,
             size = 3, family = "roboto") +
   geom_text(label = "@jamie_bio | source: OurWorldinData.org", 
@@ -83,11 +83,11 @@ ggplot(sustain, aes(x = Year, y = overexploited)) +
         panel.background = element_blank(),
         plot.background = element_blank(),
         axis.ticks = element_blank())
-  
-ggsave(paste0("fishing_", format(Sys.time(), "%d%m%Y"), ".png"),
+
+ggsave(paste0("global_fishing_", format(Sys.time(), "%d%m%Y"), ".png"),
        dpi = 320,
        width = 9,
        height = 6)
-  
 
-  
+
+
