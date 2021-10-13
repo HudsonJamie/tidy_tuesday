@@ -4,6 +4,12 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2021 week 42](/2021/week_42/) - Global fishing 🐟
+
+Global fishing data from OurWorldinData.org
+![global_fishing](/2021/week_42/global_fishing_13102021.png)
+
+----
 
 ## [2021 week 41](/2021/week_41/) - US registered nurses 🏥
 
