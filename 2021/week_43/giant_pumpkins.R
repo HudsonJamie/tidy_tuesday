@@ -130,11 +130,11 @@ C <- ggplot(tomatoes, aes(state = state, fill = med_weight)) +
         legend.position = "bottom")
 
 A + B + C +
-  plot_annotation(title = "Great Pumpkin Commonwealth",
+  plot_annotation(title = "Go Big or Gourd Home",
                            caption = "@jamie_bio | source = BigPumpkins.com",
                            subtitle = "The median weight of Giant Pumpkins, Giant Watermelon, and Tomatoes grown in each state entered into Great Pumpkin Commonwealth competitions.",
                            theme = theme(text = element_text(family ="Merriweather"),
-                                         plot.title = element_text(size = 20),
+                                         plot.title = element_text(size = 25),
                                          plot.title.position = 'plot',
                                          plot.subtitle = element_text(size = 11,
                                                                       family ="Open Sans"),
@@ -248,11 +248,11 @@ F <- ggplot(tomatoes_max, aes(state = state, fill = max_weight)) +
         legend.position = "bottom")
 
 D + E + F +
-  plot_annotation(title = "Great Pumpkin Commonwealth",
+  plot_annotation(title = "Go Big or Gourd Home",
                   caption = "@jamie_bio | source = BigPumpkins.com",
                   subtitle = "The maximum weight of Giant Pumpkins, Giant Watermelons, and Tomatoes grown in each state entered into Great Pumpkin Commonwealth competitions.",
                   theme = theme(text = element_text(family ="Merriweather"),
-                                plot.title = element_text(size = 20),
+                                plot.title = element_text(size = 25),
                                 plot.title.position = 'plot',
                                 plot.subtitle = element_text(size = 11,
                                                              family ="Open Sans"),
