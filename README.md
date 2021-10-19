@@ -4,6 +4,14 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2021 week 42](/2021/week_43/) - Giant pumpkins 🎃
+
+Global fishing data from BigPumpkins.com
+![giant_pumpkins_med](/2021/week_43/giant_pumpkins_med_19102021.png)
+![giant_pumpkins_max_19102021](/2021/week_43/giant_pumpkins_max_19102021.png)
+
+----
+
 ## [2021 week 42](/2021/week_42/) - Global fishing 🐟
 
 Global fishing data from OurWorldinData.org
