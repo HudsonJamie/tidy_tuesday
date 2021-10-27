@@ -1,8 +1,8 @@
 # ultra_running.R
 # Jamie Hudson
-# Created: Date
-# Edited: Date
-# Data: Data
+# Created: 27 October 2021
+# Edited: 27 October 2021
+# Data: Benjamin Nowak by way of International Trail Running Association (ITRA)
 
 # load libraries ------------------------------------------------------------
 
