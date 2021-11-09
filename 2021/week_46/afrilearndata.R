@@ -10,10 +10,12 @@ library(tidytuesdayR)
 library(tidyverse)
 library(afrilearndata)
 library(afrihealthsites)
+library(rgdal)
 library(osmdata)
 library(sf)
 library(ggfx)
 library(showtext)
+library(viridis)
 font_add_google("Old Standard TT", "oldtt")
 showtext_opts(dpi = 320)
 showtext_auto(enable = TRUE)
@@ -39,6 +41,8 @@ sudan_hospital <- afrihealthsites("sudan", plot='sf', datasource = "who",
   filter(facility == "hospital") %>% 
   drop_na(long)
 
+projcrs <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+
 sudan_hospital_sf <- st_as_sf(sudan_hospital,
                        coords = c("long", "lat"),
                        crs = projcrs)
@@ -48,7 +52,7 @@ sudan_hospital_join = sudan_hospital_sf %>%
 
 sf::sf_use_s2(FALSE)
 
-distance <-  st_distance(sudan_hex_sf, sudan_test_join) %>% 
+distance <-  st_distance(sudan_hex_sf, sudan_hospital_join) %>% 
   units::set_units("km")
 
 sudan_wf <- sudan_hex %>% 
@@ -83,7 +87,7 @@ ggplot() +
                          barheight = 0.5,
                          frame.colour = "black"
                        )) +
-  geom_point(data = sudan_hos, 
+  geom_point(data = sudan_hospital, 
              aes(x = long, y = lat), 
              colour = "white", size = 0.3,
              alpha = 0.3) +
