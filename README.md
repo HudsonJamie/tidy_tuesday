@@ -4,6 +4,13 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2021 week 46](/2021/week_46/) - Learning with `afrilearndata` 🌍💻
+
+`afrilearndata` data courtesy of `afrilearndata` and `afrihealthsites`
+![afrilearndata](/2021/week_46/sudan_hospitals_09112021.png)
+
+----
+
 ## [2021 week 44](/2021/week_44/) - Ultra Trail Running 🏃‍♀️
 
 Ultra Trail Running data courtesy of Benjamin Nowak by way of International Trail Running Association (ITRA)
