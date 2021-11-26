@@ -4,6 +4,13 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2021 week 48](/2021/week_48/) - Doctor Who 🚀📺
+
+Doctor Who data courtesy of `datardis` 
+![doctor_who](/2021/week_48/doctor_who_viewership_26112021.png)
+
+----
+
 ## [2021 week 46](/2021/week_46/) - Learning with `afrilearndata` 🌍💻
 
 `afrilearndata` data courtesy of `afrilearndata` and `afrihealthsites`
