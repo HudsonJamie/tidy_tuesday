@@ -7,7 +7,7 @@ Please send me any hints or tips you may have on [Twitter](https://twitter.com/J
 ## [2021 week 48](/2021/week_48/) - Doctor Who 🚀📺
 
 Doctor Who data courtesy of `datardis` 
-![doctor_who](/2021/week_48/doctor_who_viewership_26112021.png)
+![doctor_who](/2021/week_48/doctor_who_26112021.png)
 
 ----
 
