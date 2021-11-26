@@ -130,7 +130,7 @@ ave_viewers %>%
                            axis.colour = "white",
                            axis.linewidth = 1,
                            override.aes = list(colour = "white"))) +
-  theme(plot.background = element_rect(fill = "#09131C", colour = "#fafaf5"),
+  theme(plot.background = element_rect(fill = "#09131C", colour = "#09131C"),
         plot.margin = margin(10, 25, 10, 25),
         panel.background = element_rect(fill = NA, colour = NA),
         panel.border = element_rect(fill = NA, colour = NA),
@@ -152,7 +152,7 @@ ave_viewers %>%
         legend.key.width = unit(2, "lines"),
         plot.title = element_text(colour = "white",
                                   family = "Genos",
-                                  size = 50,
+                                  size = 40,
                                   margin = margin(5, 0, 0, 0)),
         plot.subtitle = element_text(colour = "white",
                                    family = "Genos",
@@ -169,7 +169,7 @@ ave_viewers %>%
         axis.text = element_text(colour = "white",
                                  family = "Genos"))
 
-ggsave(paste0("doctor_who_viewership_3_", format(Sys.time(), "%d%m%Y"), ".png"),
+ggsave(paste0("doctor_who_viewership_", format(Sys.time(), "%d%m%Y"), ".png"),
        dpi = 320,
        width = 12,
        height = 6)
