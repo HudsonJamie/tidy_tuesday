@@ -12,6 +12,12 @@ library(lubridate)
 library(png)
 library(grid)
 library(ggtext)
+library(showtext)
+font_add_google("Playfair Display", "playfair")
+font_add_google("Lato", "Lato")
+showtext_opts(dpi = 320)
+showtext_auto(enable = TRUE)
+
 
 # load dataset ------------------------------------------------------------
 
@@ -71,18 +77,18 @@ ggplot(matches_df, aes(x = month, y = id, fill = margin.type)) +
        subtitle = "Between 1996 and 2005 there were 1,235 One Day International (ODI) cricket matches played that ended in a result. At the start of each match, there is a coin toss to determine  \nwhich team bats and fields first. \nAltogether, the number of matches won (<span style='color:#F2A551;'>**616**</span>) by the team that won the toss is similar to the number won (<span style='color:#BC1C21;'>**605**</span>) by those who lost the toss.  \nHowever, there seems to be a temporal trend as between 1996-1998, **45%** of matches were won by the team that won the toss, but by 2003-2005 this had risen to **60%**.") +
   annotate("text", x = as.Date("1995-06-15"), y = 2,
             label = "Decide to bat first", 
-           family = "Lato", fontface = "italic", size = 3,
+           family = "playfair", fontface = "italic", size = 3,
            colour = "grey50") +
   annotate("text", x = as.Date("1995-06-15"), y = -2,
             label = "Decide to field first",
-           family = "Lato", fontface = "italic", size = 3,
+           family = "playfair", fontface = "italic", size = 3,
            colour = "grey50") +
   annotate("text", x = as.Date("1997-07-01"), y = 18,
-           label = "In 1996 Sri Lanka won the World Cup \nsemi-final by default after crow trouble \ninterrupted the match.",
-           size = 3, family = "Lato") +
+           label = "In 1996 Sri Lanka won the World Cup \nsemi-final by default after crowd trouble \ninterrupted the match.",
+           size = 3, family = "Lato", fontface = "italic") +
   annotate("text", x = as.Date("2002-01-01"), y = 13,
            label = "In 2001 Pakistan were awarded \nthe match vs England after the \ncrowd accessed the pitch.",
-           size = 3, family = "Lato") +
+           size = 3, family = "Lato", fontface = "italic") +
   annotate("curve", x = as.Date("1997-01-01"), xend = as.Date("1996-03-10"),
            y = 14.5, yend = 6.5, size = 0.6, arrow = arrow(length = unit(0.15, "cm")),
            curvature = 0.15, colour = "white") +
@@ -107,20 +113,22 @@ ggplot(matches_df, aes(x = month, y = id, fill = margin.type)) +
         panel.background = element_rect(fill = "white"),
         plot.background = element_rect(fill = "white"),
         panel.grid = element_blank(),
-        plot.title = element_text(size = 30, family = "Lato", hjust = 0.5,
+        plot.title = element_text(size = 30, family = "playfair", hjust = 0.5,
                                   face = "bold"),
         plot.subtitle = element_markdown(size = 10, family = "Lato", hjust = 0.5,
                                          lineheight = 1.1, face = "italic", colour = "grey30"),
-        plot.caption = element_text(size = 7, family = "Lato",
+        plot.caption = element_text(size = 7, family = "playfair",
                                     colour = "grey80"),
         legend.position = c(0.85, 0.13),
         legend.direction = "horizontal",
         legend.key = element_blank(),
         legend.background = element_blank(),
-        legend.text = element_text(family = "Lato", size = 7.5),
-        legend.title = element_text(family = "Lato", size = 9.5),
-        axis.text.x = element_text(family = "Lato", colour = "grey50"),
-        axis.title.x = element_text(family = "Lato", colour = "grey50"),
+        legend.text = element_text(family = "Lato", size = 7.5,
+                                   face = "italic"),
+        legend.title = element_text(family = "Lato", size = 9.5,
+                                    face = "italic"),
+        axis.text.x = element_text(family = "playfair", colour = "grey50"),
+        axis.title.x = element_text(family = "playfair", colour = "grey50"),
         axis.ticks.x = element_line(colour = "grey80"),
         axis.text.y = element_blank(),
         axis.ticks.y = element_blank())
