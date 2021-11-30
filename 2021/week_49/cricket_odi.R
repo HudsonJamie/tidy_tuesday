@@ -110,7 +110,7 @@ ggplot(matches_df, aes(x = month, y = id, fill = margin.type)) +
         plot.title = element_text(size = 30, family = "Lato", hjust = 0.5,
                                   face = "bold"),
         plot.subtitle = element_markdown(size = 10, family = "Lato", hjust = 0.5,
-                                         lineheight = 1.1, face = "italic"),
+                                         lineheight = 1.1, face = "italic", colour = "grey30"),
         plot.caption = element_text(size = 7, family = "Lato",
                                     colour = "grey80"),
         legend.position = c(0.85, 0.13),
