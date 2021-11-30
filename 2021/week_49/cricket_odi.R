@@ -68,7 +68,7 @@ ggplot(matches_df, aes(x = month, y = id, fill = margin.type)) +
        x = "Year",
        title = "Does winning the toss influence ODI results?",
        caption = "@jamie_bio | source = ESPN Cricinfo by way of Hassanasir",
-       subtitle = "Between 1996 and 2005 there were 1,335 One Day International (ODI) cricket matches played that ended in a result. At the start of each match, there is a coin toss to determine  \nwhich team bats and fields first. \nAltogether, the number of matches won (<span style='color:#F2A551;'>**616**</span>) by the team that won the toss is similar to the number won (<span style='color:#BC1C21;'>**605**</span>) by those who lost the toss.  \nHowever, there seems to be a temporal trend as between 1996-1998, **45%** of matches were won by the team that won the toss, but by 2003-2005 this had risen to **60%**.") +
+       subtitle = "Between 1996 and 2005 there were 1,235 One Day International (ODI) cricket matches played that ended in a result. At the start of each match, there is a coin toss to determine  \nwhich team bats and fields first. \nAltogether, the number of matches won (<span style='color:#F2A551;'>**616**</span>) by the team that won the toss is similar to the number won (<span style='color:#BC1C21;'>**605**</span>) by those who lost the toss.  \nHowever, there seems to be a temporal trend as between 1996-1998, **45%** of matches were won by the team that won the toss, but by 2003-2005 this had risen to **60%**.") +
   annotate("text", x = as.Date("1995-06-15"), y = 2,
             label = "Decide to bat first", 
            family = "Lato", fontface = "italic", size = 3,
