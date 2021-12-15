@@ -4,6 +4,13 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2021 week 51](/2021/week_51/) - Spice Girls 🇬🇧🎤
+
+Spice Girls data courtesy of Jacquie Tran by way of Spotify and Genius
+![spice_girls](/2021/week_51/spice_girls_15122021.png)
+
+----
+
 ## [2021 week 50](/2021/week_50/) - World Spider Database 🕷
 
 Spider data courtesy of World Spider Database
