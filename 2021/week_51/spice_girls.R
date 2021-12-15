@@ -140,13 +140,13 @@ arrow <- tribble(
 
 final_plot <- songs_eq +
   plot_annotation(title = "Zigazig-R",
-                  subtitle = "Each equalizer displays different Spotify audio features of each \nsong released by the Spice Girls. Acousticness and Liveness relate \nto context, whereas Danceability, Energy, and Valence portray mood. \nAcoustic and Speechiness are consistently low, whereas Energy and \nDanceability are unsurprisingly heavily featured.",
+                  subtitle = "Each equalizer displays different Spotify audio features of each \nsong released by the Spice Girls. Acousticness and Liveness relate \nto context, whereas Danceability, Energy, and Valence portray mood. \nAcousticness and Speechiness are consistently low, whereas most \nsongs unsurprisingly have high values of Energy and Danceability.",
                   caption = "@jamie_bio | source: Jacquie Tran with Spotify and Genius",
                   theme = theme(plot.title = element_text(size = 110,
                                                           margin = margin(20,0,0,0),
                                                           family = "Chicle",
                                                           colour = "#358274",
-                                                          hjust = 0.3),
+                                                          hjust = 0.25),
                                 plot.subtitle = element_text(size = 30,
                                                              lineheight = 1.1,
                                                              margin = margin(40, 0, 50, 0),
