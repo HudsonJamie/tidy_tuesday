@@ -48,7 +48,7 @@ Ultra Trail Running data courtesy of Benjamin Nowak by way of International Trai
 
 ## [2021 week 42](/2021/week_43/) - Giant pumpkins 🎃
 
-Global fishing data from BigPumpkins.com
+Giant pumpkin data from BigPumpkins.com
 ![giant_pumpkins_med](/2021/week_43/giant_pumpkins_med_19102021.png)
 ![giant_pumpkins_max_19102021](/2021/week_43/giant_pumpkins_max_19102021.png)
 
