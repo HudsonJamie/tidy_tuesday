@@ -2,7 +2,7 @@
 # Jamie Hudson
 # Created: 21 Dec 2021
 # Edited: 21 Dec 2021
-# Data: Data
+# Data: PythonCoderUnicorn and Starbucks Coffee Company
 
 # load libraries ------------------------------------------------------------
 
@@ -14,7 +14,6 @@ font_add_google("Lora")
 font_add_google("Merriweather")
 showtext_opts(dpi = 320)
 showtext_auto(enable = TRUE)
-
 
 # load dataset ------------------------------------------------------------
 
@@ -67,13 +66,11 @@ starbucks_sugar_df <- starbucks_sugar %>%
 
 # plot ------------------------------------------------------------
 
-coke <- test %>% 
+coke <- starbucks_sugar_df %>% 
   filter(product_name == "Can of coke")
 
-java_chip <- test %>% 
+java_chip <- starbucks_sugar_df %>% 
   filter(product_name == "Java chip frappuccino blended")
-
-axis_col <- ifelse(unique(test$product_name) == "Coke", "#F40009", "black")
 
 starbucks_sugar_df %>% 
   ggplot(aes(x = product_name, y = id)) +
@@ -83,10 +80,10 @@ starbucks_sugar_df %>%
   geom_point(data = java_chip, mapping = aes(x = product_name, y = id),
              shape = 22, size = 9, fill = "#015F3E", stroke = 1.5) +
   coord_flip() +
-  annotate("curve", x = 1.45, xend = 1,
+  annotate("curve", x = 1.45, xend = 1.1,
            y = 6, yend = 1.1, size = 0.5, arrow = arrow(length = unit(0.3, "cm")),
            curvature = 0.05) +
-  annotate("curve", x = 1.55, xend = 2,
+  annotate("curve", x = 1.55, xend = 1.9,
            y = 6, yend = 1.1, size = 0.5, arrow = arrow(length = unit(0.3, "cm")),
            curvature = -0.05) +
   annotate("richtext", x = 1.5, y = 9.5,
@@ -98,9 +95,9 @@ starbucks_sugar_df %>%
   annotate("richtext", x = 8.2, y = 22,
            label = "A venti sized *Java chip frappuccino  \nblended* contains a whopping  \n89g of sugar (~ 22 sugar cubes)",
            size = 4, family = "Lora", fill = NA, label.color = NA) +
-  annotate("curve", x = 5.7, xend = 5.1,
-           y = 13.7, yend = 16.4, size = 0.5, arrow = arrow(length = unit(0.3, "cm")),
-           curvature = 0.1) +
+  annotate("curve", x = 6, xend = 5.4,
+           y = 13.8, yend = 16.5, size = 0.5, arrow = arrow(length = unit(0.3, "cm")),
+           curvature = -0.1) +
   annotate("richtext", x = 5, y = 19,
            label = "A single sugar cube  \ncontains ~4g of sugar",
            size = 4, family = "Lora", fill = NA, label.color = NA) +
