@@ -4,6 +4,13 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2021 week 52](/2021/week_52/) - Starbucks Coffees ☕️
+
+Starbucks data courtesy of PythonCoderUnicorn and Starbucks Coffee Company
+![starbucks](/2021/week_52/starbucks_21122021.png)
+
+----
+
 ## [2021 week 51](/2021/week_51/) - Spice Girls 🇬🇧🎤
 
 Spice Girls data courtesy of Jacquie Tran by way of Spotify and Genius
