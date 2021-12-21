@@ -98,12 +98,12 @@ starbucks_sugar_df %>%
   annotate("curve", x = 6, xend = 5.4,
            y = 13.8, yend = 16.5, size = 0.5, arrow = arrow(length = unit(0.3, "cm")),
            curvature = -0.1) +
-  annotate("richtext", x = 5, y = 19,
-           label = "A single sugar cube  \ncontains ~4g of sugar",
+  annotate("richtext", x = 5, y = 19.5,
+           label = "Each square represents a  \nsingle sugar cube which  \ncontains ~4g of sugar",
            size = 4, family = "Lora", fill = NA, label.color = NA) +
   lims(y = c(1.1, 25)) +
   labs(title = "Whole Latte Sugar in your Starbucks Coffee",
-       subtitle = "Some drinks from starbucks contain over **>80g of sugar** - the equivalent of **>20 sugar cubes**  \n... or twice as much as a <span style='color:#BD0314;'>330ml can of Coke</span>.",
+       subtitle = "Some drinks from starbucks contain over **>80g of sugar** - the equivalent of **>20 sugar cubes**  \n... or over twice as much as a <span style='color:#BD0314;'>330ml can of Coke</span>.",
        caption = "@jamie_bio | source: PythonCoderUnicorn and Starbucks Coffee Company") +
   theme(panel.background = element_rect(fill = "white"),
         plot.background = element_rect(fill = "white"),
