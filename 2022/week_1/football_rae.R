@@ -257,7 +257,7 @@ italy_join <- full_join(serie_a_italy_2012_df, italybirth_tidy, by = c("birth_mo
                                  "S", "O", "N", "D"),
                       expand = c(0.02,0)) +
    annotate(geom = "text", label = "In Italy and Spain, children born at the \nbegining of the year are the oldest in their cohort, \nand subsequently there are more footballers \nborn in these months than expected.",
-            x = 3, y = -14, size = 3, hjust = 0.5, family = "Lato", colour = "grey30") +
+            x = 3, y = -14.8, size = 3, hjust = 0.5, family = "Lato", colour = "grey30") +
    lims(y = c(-28, 28)) +
    labs(x = NULL,
         y = NULL,
