@@ -277,9 +277,9 @@ italy_join <- full_join(serie_a_italy_2012_df, italybirth_tidy, by = c("birth_mo
 # bring together ----------------------------------------------------------
 
 plot_grid(spain_plot, italy_plot, eng_plot, nrow = 3) +
-  plot_annotation(title = 'Birthdate Influences Footballers Opportunity',
-                  subtitle = "The **Relative Age Effect (RAE)** refers to the overrepresentation of players born in certain parts of the year than  \nexpected based on national birth distribution. This is often related to age groups at school. It is not rare for some  \nchildren to be almost 12 months older than others in their cohort, leading to an age advantage in athletic activities.  \n \nThe plots below show the difference in the number of home-grown professional footballers who played in the  \nPremier League (England), La Liga (Spain), and Serie A (Italy) in 2012 who are born in each month compared to the  \nnumber expected based on average monthly births in each country.",
-                  caption = "@jamie_bio | source: Transfermarkt by way of {WorldFootballR}, ONS, and UNdata",
+  plot_annotation(title = "Birthdate Provides a Footballing Advantage",
+                  subtitle = "The **Relative Age Effect (RAE)** refers to the overrepresentation of players born in certain parts of the year than  \nexpected based on national birth distribution. This is often related to age groups at school. It is not rare for some  \nchildren to be almost 12 months older than others in their cohort, leading to an age advantage in athletic activities.  \n \nThe plots below show the difference in the number of home-grown professional footballers who played in La Liga  \n(Spain), Serie A (Italy), and the Premier League (England) in 2012 who are born in each month compared to the  \nnumber expected based on average monthly births in each country.",
+                  caption = "@jamie_bio | source: Transfermarkt by way of {worldfootballR}, ONS, and UNdata",
                   theme = theme(plot.title = element_text(size = 27, hjust = 0.5,
                                                           colour = "black", family = "DM Serif Text"),
                                 plot.subtitle = element_markdown(family = "Lato", size = 11, 
