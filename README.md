@@ -4,6 +4,13 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2022 week 1](/2022/week_1/) - Relative Age Effect in Football ⚽️
+
+REA data courtesy of transfermarkt via {WorldFootballR}
+![football_rae](/2022/week_1/football_rae_09012022.png)
+
+----
+
 ## [2021 week 52](/2021/week_52/) - Starbucks Coffees ☕️
 
 Starbucks data courtesy of PythonCoderUnicorn and Starbucks Coffee Company
