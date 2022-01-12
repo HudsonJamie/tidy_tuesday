@@ -4,6 +4,13 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+## [2022 week 2](/2022/week_2/) - Bee colonies 🐝
+
+Bee colony data  courtesy of USDA
+![bee_colonies](/2022/week_2/bee_colonies_12012022.png)
+
+----
+
 ## [2022 week 1](/2022/week_1/) - Relative Age Effect in Football ⚽️
 
 REA data courtesy of transfermarkt via {WorldFootballR}
