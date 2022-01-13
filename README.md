@@ -7,7 +7,7 @@ Please send me any hints or tips you may have on [Twitter](https://twitter.com/J
 ## [2022 week 2](/2022/week_2/) - Bee colonies 🐝
 
 Bee colony data  courtesy of USDA
-![bee_colonies](/2022/week_2/bee_colonies_12012022.png)
+![bee_colonies](/2022/week_2/bee_colonies_13012022.png)
 
 ----
 
