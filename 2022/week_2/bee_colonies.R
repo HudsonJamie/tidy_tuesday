@@ -107,7 +107,7 @@ bee_r <- rasterGrob(bee, interpolate = TRUE)
     geom_segment(aes(x = 5, xend = 5, y = 0, yend = 11), arrow = arrow(length = unit(0.3,"cm"),
                                                                        ends = "both")) +
     annotate(geom = "text", label = "Height to centre of flower = % colony lost",
-             x = 4.7, y = 5.5, size = 2.5, hjust = 0.5, angle = 90,
+             x = 4.6, y = 5.5, size = 2.5, hjust = 0.5, angle = 90,
              family = "mono", colour = "black") +
     annotate(geom = "text", label = "Petals represent\ndifferent stressors",
              x = -1, y = 7, size = 2.5, hjust = 0.5, family = "mono", colour = "black") +
@@ -330,7 +330,7 @@ plot(layout)
 (p1 + p2 + p3 + p4) + 
   legend +
   plot_layout(design = layout) + 
-  plot_annotation(title = "Bee Colony Loss in the US",
+  plot_annotation(title = "Honey Bee Colony Loss in the US",
                   subtitle = "Bee colonies within six states across the US exhibited varied responses to stressors in 2017.",
                   caption = "@jamie_bio | source: USDA",
                   theme = theme(plot.title = element_text(size = 27, hjust = 0.5, 
