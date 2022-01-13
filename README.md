@@ -4,6 +4,10 @@ This repository contains my visualistaions and accompanying scripts for [#TidyTu
 
 Please send me any hints or tips you may have on [Twitter](https://twitter.com/Jamie_Bio) 🐥 or [email me](mailto:jhudsonbio@gmail.com) 📧.
 
+# Skip to: [2022](#2022) | [2021](#2021) 
+
+## 2022
+
 ## [2022 week 2](/2022/week_2/) - Bee colonies 🐝
 
 Bee colony data  courtesy of USDA
@@ -17,6 +21,8 @@ REA data courtesy of transfermarkt via {WorldFootballR}
 ![football_rae](/2022/week_1/football_rae_09012022.png)
 
 ----
+
+## 2021
 
 ## [2021 week 52](/2021/week_52/) - Starbucks Coffees ☕️
 
