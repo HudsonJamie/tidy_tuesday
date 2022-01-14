@@ -6,7 +6,7 @@ Please send me any hints or tips you may have on [Twitter](https://twitter.com/J
 
 Click the dropdown arrows to view contributions from different years.
 
-<details open><summary>2022</summary>
+<details open><summary><b>Click here to view contribitions from 2022</b></summary>
 
 ## [2022 week 2](/2022/week_2/) - Bee colonies 🐝
 
@@ -23,7 +23,7 @@ REA data courtesy of transfermarkt via {WorldFootballR}
 ----
 </details>
 
-<details><summary>2021</summary>
+<details><summary><b>Click here to view contribitions from 2021</b></summary>
 
 ## [2021 week 52](/2021/week_52/) - Starbucks Coffees ☕️
 
