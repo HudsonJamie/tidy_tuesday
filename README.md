@@ -8,6 +8,13 @@ Click the dropdown arrows to view contributions from different years.
 
 <details open><summary><b>Click here to view contribitions from 2022</b></summary>
 
+### [2022 week 3](/2022/week_3/) - Chocolate ratings 🍫
+
+Chocolate ratings data from Flavors of Cacao by way of Georgios and Kelsey
+![choc_rating](/2022/week_3/choc_ratings_21012022.png)
+
+----
+  
 ### [2022 week 2](/2022/week_2/) - Bee colonies 🐝
 
 Bee colony data  courtesy of USDA
