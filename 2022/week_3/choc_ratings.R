@@ -8,9 +8,11 @@
 
 library(tidytuesdayR)
 library(tidyverse)
-library(ggmap)
 library(ggtext)
 library(showtext)
+library(waffle)
+library(ggforce)
+library(patchwork)
 font_add_google("Bebas Neue")
 font_add_google("Playfair Display")
 showtext_opts(dpi = 320)
@@ -57,7 +59,7 @@ waffle_function <- function(country) {
     expand_limits(x=c(0,0), y=c(0,0)) +
     lims(y = c(-1, 17)) +
     geom_text(label = country, mapping = aes(x = 0.5, y = -0.5),
-              hjust = 0, family = "Bebas Neue", colour = "grey50", 
+              hjust = 0, family = "Bebas Neue", colour = "grey60", 
               size = 7) +
     labs(fill = NULL, colour = NULL) +
     coord_equal() +
@@ -139,23 +141,23 @@ country_cord <- choc.sam.maps %>%
 # bring together
 map +
   annotate("curve", x = country_cord$lon[2], xend = -38, y = country_cord$lat[2], yend = -38, 
-           colour = "black", size = 0.8, arrow = arrow(length = unit(0.25, "cm")),
-           curvature = -0.3) +
-  annotate("curve", x = country_cord$lon[6], xend = -27, y = country_cord$lat[6], yend = 3, 
-           colour = "black", size = 0.7, arrow = arrow(length = unit(0.25, "cm")),
-           curvature = -0.1) +
-  annotate("curve", x = country_cord$lon[3], xend = -61, y = country_cord$lat[3], yend = 16, 
-           colour = "black", size = 0.7, arrow = arrow(length = unit(0.25, "cm")),
-           curvature = -0.1) +
+           colour = "black", size = 0.8, 
+           curvature = -0.3, linetype = "dotted") +
+  annotate("curve", x = country_cord$lon[6], xend = -25, y = country_cord$lat[6], yend = 3, 
+           colour = "black", size = 0.7, 
+           curvature = -0.1, linetype = "dotted") +
+  annotate("curve", x = country_cord$lon[3], xend = -61.5, y = country_cord$lat[3], yend = 16, 
+           colour = "black", size = 0.7, 
+           curvature = -0.1, linetype = "dotted") +
   annotate("curve", x = country_cord$lon[4], xend = -88, y = country_cord$lat[4], yend = 6, 
-           colour = "black", size = 0.7, arrow = arrow(length = unit(0.25, "cm")),
-           curvature = -0.1) +
+           colour = "black", size = 0.7, 
+           curvature = -0.1, linetype = "dotted") +
   annotate("curve", x = country_cord$lon[5] - 2, xend = -91, y = country_cord$lat[5], yend = -18, 
-           colour = "black", size = 0.7, arrow = arrow(length = unit(0.25, "cm")),
-           curvature = -0.1) +
+           colour = "black", size = 0.7, 
+           curvature = -0.1, linetype = "dotted") +
   annotate("curve", x = country_cord$lon[1], xend = -84, y = country_cord$lat[1], yend = -45, 
-           colour = "black", size = 0.7, arrow = arrow(length = unit(0.25, "cm")),
-           curvature = -0.1) +
+           colour = "black", size = 0.7, 
+           curvature = -0.1, linetype = "dotted") +
   inset_element(brazil_waffle, left = 0.5, bottom = 0.13, right = 0.9, top = 0.53) +
   inset_element(venezuela_waffle, left = 0.65, bottom = 0.45, right = 1.05, top = 0.85) +
   inset_element(colombia_waffle, left = 0.35, bottom = 0.85, right = 0.75, top = 1.25) +
@@ -164,8 +166,8 @@ map +
   inset_element(bolivia_waffle, left = 0.05, bottom = 0.1, right = 0.45, top = 0.5) +
   inset_element(legend, left = 0.65, bottom = 0.05, right = 1.05, top = 0.45) +
   plot_annotation(title = "<span style = 'color:#582C80;'>Venezuela</span> and <span style = 'color:#582C80;'>Peru</span> set the Bar",
-                  subtitle = "Each square represents a chocolate bar rated 3.5 or higher manufacutured using South American beans.",
-                  caption = "@jamie_bio | source: Flavors of Cacao",
+                  subtitle = "Each square represents a chocolate bar rated 3.5 or higher manufacutured using South American cacao beans.",
+                  caption = "@jamie_bio | source:  Flavors of Cacao by way of Georgios and Kelsey",
                   theme = theme(panel.background = element_blank(),
                                 plot.background = element_rect(fill = "white", colour = "white"),
                                 plot.title = element_markdown(size = 35,
