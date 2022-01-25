@@ -106,7 +106,7 @@ Registered nurse data from Data.World
 ### [2021 week 39](/2021/week_39/) - Emmy awards 🏆
 
 Emmy award data from emmys.com
-![us_billboard](/2021/week_39/emmys_22092021.png)
+![emmys](/2021/week_39/emmys_22092021.png)
 
 ----
 
@@ -239,14 +239,14 @@ Mario Kart 64 World Records from Benedikt Claus & MKWR
 ### [2021 week 21](/2021/week_21/) - Salary survey 💰
 
 Salary survey from Ask a Manager
-![water_source](/2021/week_21/salary_data20052021.png)
+![salary_survey](/2021/week_21/salary_data20052021.png)
 
 ----
 
 ### [2021 week 20](/2021/week_20/) - Internet Access 💻
 
 Internet access data from Microsoft
-![water_source](/2021/week_20/internet_data14052021.png)
+![internet_access](/2021/week_20/internet_data14052021.png)
 
 ----
 
