@@ -80,37 +80,37 @@ legend_df <- winlos %>%
 
 (legend <- ggplot(legend_df) +
    geom_segment(aes(yend = total_games), x = 0.55, xend = 0.55, y = 0,
-                size = 1, colour = "white", lineend = "round") +
+                size = 1, colour = "grey80", lineend = "round") +
    geom_segment(aes(yend = total_games), x = 1.45, xend = 1.45, y = 0,
-                size = 1, colour = "white", lineend = "round") +
+                size = 1, colour = "grey80", lineend = "round") +
    geom_segment( aes(y = total_loss, yend = total_loss), x = 0.55, xend = 1.45,
-                 size = 1, colour = "white", lineend = "round") +
+                 size = 1, colour = "grey80", lineend = "round") +
    geom_text(mapping = aes(x = 0.585, y = total_loss + 40),
              label = "Team",
              size = 5, hjust = 0,
-             family = "Playfair Display", colour = "white") +
+             family = "Playfair Display", colour = "grey80") +
    geom_text(mapping = aes(x = 1.2, y = total_loss + 0.5 * total_wins),
-             label = "Games  \nwon",colour = "grey80",
+             label = "Games  \nwon",colour = "grey60",
              size = 3, hjust = 0.5, angle = 90,
              family = "Poppins") +
    geom_text(mapping = aes(x = 0.8, y = total_loss/2),
-             label = "Games  \nlost",colour = "grey80",
+             label = "Games  \nlost",colour = "grey60",
              size = 3, hjust = 0.5, angle = 90,
              family = "Poppins") +
    geom_text(mapping = aes(x = 1.65, y = total_games/2),
-             label = "Games played",colour = "grey80",
+             label = "Games played",colour = "grey60",
              size = 3, hjust = 0.5, angle = 90,
              family = "Poppins") +
    geom_segment(aes(yend = total_games), x = 1.55, xend = 1.55, y = 0,
-                size = 0.5, colour = "grey80",
+                size = 0.5, colour = "grey60",
                 arrow = arrow(length = unit(0.15, "cm"),
                               ends = "both")) +
    geom_segment(aes(yend = total_loss - 20), x = 0.65, xend = 0.65, y = 0,
-                size = 0.4, colour = "grey80",
+                size = 0.4, colour = "grey60",
                 arrow = arrow(length = unit(0.15, "cm"),
                               ends = "both")) +
    geom_segment(aes(y = total_loss + 20, yend = total_games), x = 1.35, xend = 1.35, 
-                size = 0.4, colour = "grey80",
+                size = 0.4, colour = "grey60",
                 arrow = arrow(length = unit(0.15, "cm"),
                               ends = "both")) +
    lims(x = c(0.5, 1.65),
@@ -122,7 +122,7 @@ legend_df <- winlos %>%
 
 (final_plot <- goalposts +
     plot_annotation(title = "Women's Rugby Sevens",
-                    subtitle = "Performance of the 10 international teams that have played the most number of rugby sevens matches. \nGoal posts are arranged by total matches played, with lower cross bars represent teams that have a higher \nwin ratio. Matches that ended in a draw are excluded from the visualisation",
+                    subtitle = "Performance of the 10 international teams that have played the most number of rugby sevens matches. \nGoal posts are arranged by total matches played, with lower crossbars represent teams that have a higher \nwin ratio. Matches that ended in a draw are excluded from the visualisation",
                     caption = "@jamie_bio | source: ScrumQueens by way of Jacquie Tran",
                     theme = theme(plot.title = element_text(size = 40,
                                                             family = "Playfair Display",
@@ -134,7 +134,7 @@ legend_df <- winlos %>%
                                   plot.subtitle = element_text(family = "Poppins",
                                                                size = 10,
                                                                lineheight = 1.1,
-                                                               colour = "white"),
+                                                               colour = "grey80"),
                                   panel.background = element_rect(colour = "#3B4737",
                                                                   fill = "#3B4737"),
                                   plot.background = element_rect(colour = "#3B4737",
