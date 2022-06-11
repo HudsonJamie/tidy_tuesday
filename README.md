@@ -8,7 +8,14 @@ Click the dropdown arrows to view contributions from different years.
 
 <details open><summary><b>Click here to view contribitions from 2022</b></summary>
 
-### [2022 week 3](/2022/week_3/) - Women's Rugby 🏉
+### [2022 week 23](/2022/week_23/) - Pride Corporate Accountability 🏳️‍🌈
+
+Pride Corporate Accountability from Data For Progress
+![pride_hypocrites](/2022/week_23/pride_politicians_11062022.png)
+
+----
+  
+### [2022 week 21](/2022/week_21/) - Women's Rugby 🏉
 
 Women's rugby data from ScrumQueens by way of Jacquie Tran
 ![rugby_sevens](/2022/week_21/womens_rugby_25052022.png)
