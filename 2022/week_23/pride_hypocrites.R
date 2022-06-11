@@ -51,11 +51,11 @@ plot_df %>%
   scale_colour_identity() +
   geom_segment(x = -550, xend = 550, y = 0, yend = 0, colour = "grey45") +
   geom_text(aes(x = 0, y = -100, label = company), family = "GilbertBoldPreview5") +
-  geom_text(aes(x = 0, y = r + 100, label = paste0("$", round(amount_contributed_across_states,0))), family = "GilbertBoldPreview5") +
+  geom_text(aes(x = 0, y = r + 100, label = paste0("$", format(amount_contributed_across_states, big.mark = ",", digits = 1))), family = "GilbertBoldPreview5") +
   coord_fixed() +
   lims(x = c(-580, 580), y = c(-200, 600)) +
   facet_wrap(~ company, ncol = 5) +
-  labs(title = "Companies That Fund Anti-LGBTQ+ Politicians",
+  labs(title = "Corporations That Fund Anti-LGBTQ+ Politicians",
        subtitle = "Of the ten highest contributors towards anti-LGBTQ+ politicians, six companies are also <span style='color:#E50000;'>s</span><span style='color:#FF8D00;'>p</span><span style='color:#FFCC00;'>o</span><span style='color:#028121;'>n</span><span style='color:#004CFF;'>s</span><span style='color:#770088;'>o</span><span style='color:#E50000;'>r</span><span style='color:#FF8D00;'>s</span> <span style='color:#FFCC00;'>o</span><span style='color:#028121;'>f</span> <span style='color:#004CFF;'>P</span><span style='color:#770088;'>r</span><span style='color:#E50000;'>i</span><span style='color:#FF8D00;'>d</span><span style='color:#FFCC00;'>e</span>",
        caption = "@jamie_bio | source: Data For Progress") +
   theme(strip.text.x = element_blank(),
@@ -65,12 +65,12 @@ plot_df %>%
         panel.background = element_rect(fill = "#F2F2F2", colour = "#F2F2F2"),
         plot.background = element_rect(fill = "#F2F2F2", colour = "#F2F2F2"),
         panel.grid = element_blank(),
-        plot.title = element_text(family = "GilbertBoldPreview5", size = 40),
-        plot.subtitle = element_markdown(family = "Raleway", face = "bold", size = 14.3),
+        plot.title = element_text(family = "GilbertBoldPreview5", size = 40, hjust = 0.5),
+        plot.subtitle = element_markdown(family = "Raleway", face = "bold", size = 14, hjust = 0.5),
         plot.caption = element_markdown(family = "Raleway", size = 8))
 
 ggsave(paste0("pride_politicians_", format(Sys.time(), "%d%m%Y"), ".png"),
        dpi = 320,
-       width = 10.5,
-       height =  4)
+       width = 11,
+       height =  4.3)
 
