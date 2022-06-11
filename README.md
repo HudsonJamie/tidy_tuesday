@@ -21,7 +21,9 @@ Women's rugby data from ScrumQueens by way of Jacquie Tran
 ![rugby_sevens](/2022/week_21/womens_rugby_25052022.png)
 
 ----
-  
+
+### [2022 week 3](/2022/week_3/) - Chocolate ratings 🍫
+
 Chocolate ratings data from Flavors of Cacao by way of Georgios and Kelsey
 ![choc_rating](/2022/week_3/choc_ratings_21012022.png)
 
