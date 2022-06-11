@@ -1,0 +1,1 @@
+![pride_hypocrites](/2022/week_23/pride_politicians_11062022.png)
