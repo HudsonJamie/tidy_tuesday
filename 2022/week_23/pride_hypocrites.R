@@ -31,7 +31,7 @@ options(scipen=10000)
 plot_df <- static_list %>%
   janitor::clean_names() %>% 
   slice_head(n = 10) %>% 
-  mutate(r = sqrt(amount_contributed_across_states/pi),
+  mutate(r = sqrt(2*amount_contributed_across_states/pi),
          r1 = r * 5/6,
          r2 = r * 4/6,
          r3 = r * 3/6,
@@ -49,11 +49,11 @@ plot_df %>%
   geom_arc_bar(aes(r0 = 0, r = r5, start = - 1 * pi / 2, end = 1 * pi / 2, fill = ifelse(pride == T, "#770088", "grey80"), colour = ifelse(pride == T, "#770088", "grey80"))) +
   scale_fill_identity() +
   scale_colour_identity() +
-  geom_segment(x = -550, xend = 550, y = 0, yend = 0, colour = "grey45") +
+  geom_segment(x = -650, xend = 650, y = 0, yend = 0, colour = "grey45") +
   geom_text(aes(x = 0, y = -100, label = company), family = "GilbertBoldPreview5") +
   geom_text(aes(x = 0, y = r + 100, label = paste0("$", format(amount_contributed_across_states, big.mark = ",", digits = 1))), family = "GilbertBoldPreview5") +
   coord_fixed() +
-  lims(x = c(-580, 580), y = c(-200, 600)) +
+  lims(x = c(-680, 680), y = c(-200, 800)) +
   facet_wrap(~ company, ncol = 5) +
   labs(title = "Corporations That Fund Anti-LGBTQ+ Politicians",
        subtitle = "Of the ten highest contributors towards anti-LGBTQ+ politicians, six companies are also <span style='color:#E50000;'>s</span><span style='color:#FF8D00;'>p</span><span style='color:#FFCC00;'>o</span><span style='color:#028121;'>n</span><span style='color:#004CFF;'>s</span><span style='color:#770088;'>o</span><span style='color:#E50000;'>r</span><span style='color:#FF8D00;'>s</span> <span style='color:#FFCC00;'>o</span><span style='color:#028121;'>f</span> <span style='color:#004CFF;'>P</span><span style='color:#770088;'>r</span><span style='color:#E50000;'>i</span><span style='color:#FF8D00;'>d</span><span style='color:#FFCC00;'>e</span>",
