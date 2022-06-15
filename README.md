@@ -7,7 +7,14 @@ Please send me any hints or tips you may have on [Twitter](https://twitter.com/J
 Click the dropdown arrows to view contributions from different years.
 
 <details open><summary><b>Click here to view contribitions from 2022</b></summary>
+  
+### [2022 week 24](/2022/week_24/) - US drought data 🇺🇸
 
+Drought Conditions in the US from National Integrated Drought Information System
+![us_droughts](/2022/week_24/drought_severity_15062022.gif)
+
+----
+  
 ### [2022 week 23](/2022/week_23/) - Pride Corporate Accountability 🏳️‍🌈
 
 Pride Corporate Accountability from Data For Progress
