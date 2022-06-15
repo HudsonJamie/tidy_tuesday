@@ -91,7 +91,7 @@ spdf_fortified_plot <- spdf_fortified %>%
                     state_length = 2)) 
 
 animate(anim, 
-        height = 7, width = 8, units = "in", res = 300,
+        height = 7, width = 8, units = "in", res = 150,
         end_pause = 10)
 
 anim_save(paste0("drought_severity_", format(Sys.time(), "%d%m%Y"), ".gif"))
