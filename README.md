@@ -7,6 +7,14 @@ Please send me any hints or tips you may have on [Twitter](https://twitter.com/J
 Click the dropdown arrows to view contributions from different years.
 
 <details open><summary><b>Click here to view contribitions from 2022</b></summary>
+   
+### [2022 week 26](/2022/week_26/) - UK gender pay gap 💷
+
+Gender pay gap data from gender-pay-gap.service.gov.uk
+![ten_pound](/2022/week_26/gender_pay_gap_1028062022.png)
+![twenty_pound](/2022/week_26/gender_pay_gap_20_28062022.png)
+
+----
   
 ### [2022 week 24](/2022/week_24/) - US drought data 🇺🇸
 
