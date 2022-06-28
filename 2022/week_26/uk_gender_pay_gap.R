@@ -7,6 +7,7 @@
 # load libraries ------------------------------------------------------------
 
 library(tidytuesdayR)
+library(tidyverse)
 library(lubridate)
 library(ggpattern)
 library(scales)
