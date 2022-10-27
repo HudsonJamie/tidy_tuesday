@@ -112,16 +112,16 @@ ave_viewers %>%
            family = "sniglet", colour = "#F2F2F2") +
   geom_curve(x = 107, xend = 100, y = 15, yend = 15.9,
              curvature = 0.2, lineend = "round",
-           colour = "white", size = 0.5, 
+           colour = "#F2F2F2", size = 0.5, 
            arrow = arrow(length = unit(0.4, "cm"),
                          type="closed"),
            ) +
   geom_curve(x = 88, xend = 100, y = 8.8, yend = 11,
-             colour = "white", size = 0.5,
+             colour = "#F2F2F2", size = 0.5,
              curvature = -0.2, lineend = "round",
              arrow = arrow(length = unit(0.4, "cm"),
                            type="closed")) +
-  labs(title = "The Great British Bake Off is all you knead", y = "Number of UK viewers (millions)",
+  labs(title = "The Great British Bake Off is all you knead", y = "Number of viewers (millions)",
        subtitle = "Viewing figures per GBBO episode dropped after switching from BBC to Channel 4",
        x = NULL,
        caption = "@jamie_bio | source = {bakeoff} R package") +
@@ -161,7 +161,7 @@ ave_viewers %>%
         plot.subtitle = element_text(colour = "#F2F2F2",
                                      family = "comfortaa",
                                      size = 17,
-                                     margin = margin(10, 0, -20, 0)),
+                                     margin = margin(10, 0, -30, 0)),
         legend.text = element_text(colour = "#F2F2F2",
                                    family = "comfortaa",
                                    size = 8),
