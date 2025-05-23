@@ -8,7 +8,7 @@ Click the dropdown arrows to view contributions from different years.
 
 <details open><summary><b>Click here to view contribitions from 2022</b></summary>
 
-### [2022 week 43](/2022/week_26/) - The Great British Bake Off 🧁
+### [2022 week 43](/2022/week_43/) - The Great British Bake Off 🧁
 
 Great British Bake Off data from the {bakeoff} R Package
 ![gbbo](/2022/week_43/gbbo_27102022.png)
